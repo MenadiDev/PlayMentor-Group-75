@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "509359745211",
+    "firebase_url": "https://playmentor-2034f-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "playmentor-2034f",
+    "storage_bucket": "playmentor-2034f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:509359745211:android:b74de22f4d67b09c3de19e",
+        "android_client_info": {
+          "package_name": "com.playmentor.group75"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "509359745211-58hfn0k9chsm9s6fm09fu42r429eg5i2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDe-PG3aOPBRpSCum1ekKGL-Lx9-Rg_H2E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "509359745211-58hfn0k9chsm9s6fm09fu42r429eg5i2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
