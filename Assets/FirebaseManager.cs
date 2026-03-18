@@ -234,6 +234,13 @@ public class FirebaseManager : MonoBehaviour
 
     public async Task<bool> SaveQuizResult(QuizResult result)
     {
+        // ── GUEST CHECK: skip saving for guest users ──
+        if (SessionManager.IsGuest)
+        {
+            UnityEngine.Debug.Log("Guest mode: quiz result not saved.");
+            return false;
+        }
+
         if (CurrentUser == null)
         {
             UnityEngine.Debug.LogWarning("⚠️ No user signed in, cannot save quiz result");
@@ -263,18 +270,62 @@ public class FirebaseManager : MonoBehaviour
 
     async Task UpdateUserStats(QuizResult result)
     {
+        // ── GUEST CHECK: skip all stat updates for guest users ──
+        if (SessionManager.IsGuest) return;
+
         if (CurrentUserProfile == null) return;
 
-        // Calculate new stats
+        // Calculate new points
         int newPoints = CurrentUserProfile.TotalPoints + result.PointsEarned;
+        int newLevel = (newPoints / 1000) + 1;
+
+        // ─── STREAK LOGIC ───────────────────────────────
+        int currentStreak = CurrentUserProfile.CurrentStreak;
+        DateTime today = DateTime.UtcNow.Date;
+
+        // Get last quiz date from Firestore
+        try
+        {
+            var snap = await db.Collection("users").Document(CurrentUser.UserId).GetSnapshotAsync();
+            if (snap.Exists && snap.ContainsField("LastQuizDate"))
+            {
+                Timestamp lastTs = snap.GetValue<Timestamp>("LastQuizDate");
+                DateTime lastDate = lastTs.ToDateTime().Date;
+
+                if (lastDate == today)
+                {
+                    // Already played today, keep streak as-is
+                }
+                else if (lastDate == today.AddDays(-1))
+                {
+                    // Played yesterday → extend streak
+                    currentStreak++;
+                }
+                else
+                {
+                    // Missed a day → reset
+                    currentStreak = 1;
+                }
+            }
+            else
+            {
+                // First quiz ever
+                currentStreak = 1;
+            }
+        }
+        catch (Exception ex)
+        {
+            UnityEngine.Debug.LogError($"❌ Streak calc error: {ex.Message}");
+            currentStreak = 1;
+        }
 
         var updates = new Dictionary<string, object>
         {
-            { "TotalPoints", newPoints }
+            { "TotalPoints", newPoints },
+            { "CurrentStreak", currentStreak },
+            { "LastQuizDate", Timestamp.GetCurrentTimestamp() }
         };
 
-        // Level up logic (every 1000 points = 1 level)
-        int newLevel = (newPoints / 1000) + 1;
         if (newLevel > CurrentUserProfile.Level)
         {
             updates["Level"] = newLevel;
@@ -284,8 +335,58 @@ public class FirebaseManager : MonoBehaviour
         await UpdateUserProfile(updates);
     }
 
+    public async Task SaveTopicProgress(string topicId, int correct, int total)
+    {
+        // ── GUEST CHECK: skip topic progress for guest users ──
+        if (SessionManager.IsGuest)
+        {
+            UnityEngine.Debug.Log("Guest mode: topic progress not saved.");
+            return;
+        }
+
+        if (CurrentUser == null) return;
+
+        try
+        {
+            float percentage = ((float)correct / total) * 100f;
+
+            var topicRef = db.Collection("users")
+                .Document(CurrentUser.UserId)
+                .Collection("topicProgress")
+                .Document(topicId);
+
+            var snap = await topicRef.GetSnapshotAsync();
+            float bestScore = 0f;
+
+            if (snap.Exists && snap.ContainsField("Percentage"))
+                bestScore = Convert.ToSingle(snap.GetValue<double>("Percentage"));
+
+            // Only save if it's the user's best score for this topic
+            if (percentage > bestScore)
+            {
+                await topicRef.SetAsync(new Dictionary<string, object>
+                {
+                    { "Percentage", percentage },
+                    { "LastAttempt", Timestamp.GetCurrentTimestamp() }
+                });
+                UnityEngine.Debug.Log($"✅ Topic progress saved: {topicId} = {percentage}%");
+            }
+        }
+        catch (Exception ex)
+        {
+            UnityEngine.Debug.LogError($"❌ Topic progress error: {ex.Message}");
+        }
+    }
+
     public async Task<List<QuizResult>> GetUserQuizHistory(int limit = 10)
     {
+        // ── GUEST CHECK: return empty list for guest users ──
+        if (SessionManager.IsGuest)
+        {
+            UnityEngine.Debug.Log("Guest mode: no quiz history available.");
+            return new List<QuizResult>();
+        }
+
         if (CurrentUser == null) return new List<QuizResult>();
 
         try

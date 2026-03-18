@@ -1,0 +1,1482 @@
+fileFormatVersion: 2
+guid: c77619fe16d180a4b82c3481019c735e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5274687894250791699
+    second: popup-background legendary_0
+  - first:
+      213: 8475663246533821410
+    second: popup-background legendary_1
+  - first:
+      213: 3759793257402200426
+    second: popup-background legendary_2
+  - first:
+      213: 9065581894088215785
+    second: popup-background legendary_3
+  - first:
+      213: 1414205175219934496
+    second: popup-background legendary_4
+  - first:
+      213: 9006500406179334360
+    second: popup-background legendary_5
+  - first:
+      213: -5145227576595112060
+    second: popup-background legendary_6
+  - first:
+      213: 3631180849519895063
+    second: popup-background legendary_7
+  - first:
+      213: -3244272861358319816
+    second: popup-background legendary_8
+  - first:
+      213: -3751069898819454916
+    second: popup-background legendary_9
+  - first:
+      213: 8209391900718250324
+    second: popup-background legendary_10
+  - first:
+      213: 1513541450534075247
+    second: popup-background legendary_11
+  - first:
+      213: -4080164876374972813
+    second: popup-background legendary_12
+  - first:
+      213: 3567128909742345668
+    second: popup-background legendary_13
+  - first:
+      213: -8867374755651106519
+    second: popup-background legendary_14
+  - first:
+      213: -3032330204022297919
+    second: popup-background legendary_15
+  - first:
+      213: 6546982323257239729
+    second: popup-background legendary_16
+  - first:
+      213: -1671953086909329294
+    second: popup-background legendary_17
+  - first:
+      213: 1268494439338338862
+    second: popup-background legendary_18
+  - first:
+      213: -106374533440097293
+    second: popup-background legendary_19
+  - first:
+      213: -3741479242592863772
+    second: popup-background legendary_20
+  - first:
+      213: 9106264368882095474
+    second: popup-background legendary_21
+  - first:
+      213: -6459951057864341395
+    second: popup-background legendary_22
+  - first:
+      213: 6552444744050132874
+    second: popup-background legendary_23
+  - first:
+      213: 1055614890507903199
+    second: popup-background legendary_24
+  - first:
+      213: -8630983754364348649
+    second: popup-background legendary_25
+  - first:
+      213: -8448563233126842950
+    second: popup-background legendary_26
+  - first:
+      213: 1674737717084995091
+    second: popup-background legendary_27
+  - first:
+      213: -3207774893103631259
+    second: popup-background legendary_28
+  - first:
+      213: 3751065190911760714
+    second: popup-background legendary_29
+  - first:
+      213: 6482686221131946274
+    second: popup-background legendary_30
+  - first:
+      213: -2596456945017874565
+    second: popup-background legendary_31
+  - first:
+      213: 2518671917420328390
+    second: popup-background legendary_32
+  - first:
+      213: -4373973992959644597
+    second: popup-background legendary_33
+  - first:
+      213: 6600259543980477644
+    second: popup-background legendary_34
+  - first:
+      213: -504103150603289631
+    second: popup-background legendary_35
+  - first:
+      213: -1387738539128603976
+    second: popup-background legendary_36
+  - first:
+      213: -7660305629008265009
+    second: popup-background legendary_37
+  - first:
+      213: 7210773257408801301
+    second: popup-background legendary_38
+  - first:
+      213: 341713478935992579
+    second: popup-background legendary_39
+  - first:
+      213: 8273540687928686752
+    second: popup-background legendary_40
+  - first:
+      213: 7569163903518632608
+    second: popup-background legendary_41
+  - first:
+      213: -2596243476390666698
+    second: popup-background legendary_42
+  - first:
+      213: -4078723641466052543
+    second: popup-background legendary_43
+  - first:
+      213: -6638285075473284559
+    second: popup-background legendary_44
+  - first:
+      213: -6452600200068127139
+    second: popup-background legendary_45
+  - first:
+      213: 7852509323288861916
+    second: popup-background legendary_46
+  - first:
+      213: 1579064608352712708
+    second: popup-background legendary_47
+  - first:
+      213: 8000263860982020853
+    second: popup-background legendary_48
+  - first:
+      213: 353881549136017329
+    second: popup-background legendary_49
+  - first:
+      213: -222766727249700313
+    second: popup-background legendary_50
+  - first:
+      213: -4007416424202198356
+    second: popup-background legendary_51
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: popup-background legendary_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1000
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: decd0228e4b8cc6b0800000000000000
+      internalID: -5274687894250791699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background legendary_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 395
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e38b7511da9f9570800000000000000
+      internalID: 8475663246533821410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background legendary_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 383
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a61fd502c087d2430800000000000000
+      internalID: 3759793257402200426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background legendary_3
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 386
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ec475f73ba6fcd70800000000000000
+      internalID: 9065581894088215785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background legendary_4
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 371
+        width: 5
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 025d0843d1440a310800000000000000
+      internalID: 1414205175219934496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background legendary_5
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 352
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d80bb3a6648dfc70800000000000000
+      internalID: 9006500406179334360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background legendary_6
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 345
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48f118897ca7898b0800000000000000
+      internalID: -5145227576595112060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background legendary_7
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 337
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 712a5da6ebb846230800000000000000
+      internalID: 3631180849519895063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background legendary_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 321
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8371c4085070af2d0800000000000000
+      internalID: -3244272861358319816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background legendary_9
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 301
+        width: 14
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c38b4311dc581fbc0800000000000000
+      internalID: -3751069898819454916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background legendary_10
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 325
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 459b740407e9de170800000000000000
+      internalID: 8209391900718250324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background legendary_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 304
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6bb9ef1eed210510800000000000000
+      internalID: 1513541450534075247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background legendary_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 294
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 376e4ae99a75067c0800000000000000
+      internalID: -4080164876374972813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background legendary_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 267
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cd083d08dcf08130800000000000000
+      internalID: 3567128909742345668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background legendary_14
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 281
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 929462f14a1c0f480800000000000000
+      internalID: -8867374755651106519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background legendary_15
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 259
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ca2093debffae5d0800000000000000
+      internalID: -3032330204022297919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background legendary_16
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 249
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b862805cbd8bda50800000000000000
+      internalID: 6546982323257239729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background legendary_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 227
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 270d6ad96870cc8e0800000000000000
+      internalID: -1671953086909329294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background legendary_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 216
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2ae158c8f89a9110800000000000000
+      internalID: 1268494439338338862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background legendary_19
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 205
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f3b729ece4168ef0800000000000000
+      internalID: -106374533440097293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background legendary_20
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 210
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e931cab378931cc0800000000000000
+      internalID: -3741479242592863772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background legendary_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 188
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 275930a4233ff5e70800000000000000
+      internalID: 9106264368882095474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background legendary_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 177
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6846993db4a956a0800000000000000
+      internalID: -6459951057864341395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background legendary_23
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 157
+        width: 10
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a87cb7347c5feea50800000000000000
+      internalID: 6552444744050132874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background legendary_24
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 154
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd02658662c46ae00800000000000000
+      internalID: 1055614890507903199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background legendary_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 139
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71712fa1106983880800000000000000
+      internalID: -8630983754364348649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background legendary_26
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 143
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abd7c0b708ca0ca80800000000000000
+      internalID: -8448563233126842950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background legendary_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 131
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31ebcce941ddd3710800000000000000
+      internalID: 1674737717084995091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background legendary_28
+      rect:
+        serializedVersion: 2
+        x: 983
+        y: 124
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5643421fab1bb73d0800000000000000
+      internalID: -3207774893103631259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background legendary_29
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 115
+        width: 5
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a49d0a9cae57e0430800000000000000
+      internalID: 3751065190911760714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background legendary_30
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 96
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22993e875c027f950800000000000000
+      internalID: 6482686221131946274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background legendary_31
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 89
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b771d954a2887fbd0800000000000000
+      internalID: -2596456945017874565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background legendary_32
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 68
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c5379fa3ce14f220800000000000000
+      internalID: 2518671917420328390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background legendary_33
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 81
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4ce7d4e3d58c43c0800000000000000
+      internalID: -4373973992959644597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background legendary_34
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccc8658e515d89b50800000000000000
+      internalID: 6600259543980477644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background legendary_35
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 49
+        width: 11
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ebb22afad01109f0800000000000000
+      internalID: -504103150603289631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background legendary_36
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 0
+        width: 23
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8babe16b623cdbce0800000000000000
+      internalID: -1387738539128603976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background legendary_37
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 0
+        width: 9
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc08900dd9021b590800000000000000
+      internalID: -7660305629008265009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background legendary_38
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51aecb3c210d11460800000000000000
+      internalID: 7210773257408801301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background legendary_39
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 0
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30951fe39920eb400800000000000000
+      internalID: 341713478935992579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background legendary_40
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 0
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a8fabaab6581d270800000000000000
+      internalID: 8273540687928686752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background legendary_41
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 0
+        width: 13
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0aaefe397721b0960800000000000000
+      internalID: 7569163903518632608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background legendary_42
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 0
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63e1f4f405a48fbd0800000000000000
+      internalID: -2596243476390666698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background legendary_43
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 0
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 140ad6545767567c0800000000000000
+      internalID: -4078723641466052543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background legendary_44
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 0
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13243ae15e210e3a0800000000000000
+      internalID: -6638285075473284559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background legendary_45
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 0
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d56235d2e42c376a0800000000000000
+      internalID: -6452600200068127139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background legendary_46
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 0
+        width: 20
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdc531a00a7b9fc60800000000000000
+      internalID: 7852509323288861916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background legendary_47
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 0
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 408314225e6f9e510800000000000000
+      internalID: 1579064608352712708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background legendary_48
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 0
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fa7a372895a60f60800000000000000
+      internalID: 8000263860982020853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background legendary_49
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 0
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b731dcd46d39e400800000000000000
+      internalID: 353881549136017329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background legendary_50
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 0
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72a518287d298ecf0800000000000000
+      internalID: -222766727249700313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background legendary_51
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 0
+        width: 8
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca2ac509efbc268c0800000000000000
+      internalID: -4007416424202198356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      popup-background legendary_0: -5274687894250791699
+      popup-background legendary_1: 8475663246533821410
+      popup-background legendary_10: 8209391900718250324
+      popup-background legendary_11: 1513541450534075247
+      popup-background legendary_12: -4080164876374972813
+      popup-background legendary_13: 3567128909742345668
+      popup-background legendary_14: -8867374755651106519
+      popup-background legendary_15: -3032330204022297919
+      popup-background legendary_16: 6546982323257239729
+      popup-background legendary_17: -1671953086909329294
+      popup-background legendary_18: 1268494439338338862
+      popup-background legendary_19: -106374533440097293
+      popup-background legendary_2: 3759793257402200426
+      popup-background legendary_20: -3741479242592863772
+      popup-background legendary_21: 9106264368882095474
+      popup-background legendary_22: -6459951057864341395
+      popup-background legendary_23: 6552444744050132874
+      popup-background legendary_24: 1055614890507903199
+      popup-background legendary_25: -8630983754364348649
+      popup-background legendary_26: -8448563233126842950
+      popup-background legendary_27: 1674737717084995091
+      popup-background legendary_28: -3207774893103631259
+      popup-background legendary_29: 3751065190911760714
+      popup-background legendary_3: 9065581894088215785
+      popup-background legendary_30: 6482686221131946274
+      popup-background legendary_31: -2596456945017874565
+      popup-background legendary_32: 2518671917420328390
+      popup-background legendary_33: -4373973992959644597
+      popup-background legendary_34: 6600259543980477644
+      popup-background legendary_35: -504103150603289631
+      popup-background legendary_36: -1387738539128603976
+      popup-background legendary_37: -7660305629008265009
+      popup-background legendary_38: 7210773257408801301
+      popup-background legendary_39: 341713478935992579
+      popup-background legendary_4: 1414205175219934496
+      popup-background legendary_40: 8273540687928686752
+      popup-background legendary_41: 7569163903518632608
+      popup-background legendary_42: -2596243476390666698
+      popup-background legendary_43: -4078723641466052543
+      popup-background legendary_44: -6638285075473284559
+      popup-background legendary_45: -6452600200068127139
+      popup-background legendary_46: 7852509323288861916
+      popup-background legendary_47: 1579064608352712708
+      popup-background legendary_48: 8000263860982020853
+      popup-background legendary_49: 353881549136017329
+      popup-background legendary_5: 9006500406179334360
+      popup-background legendary_50: -222766727249700313
+      popup-background legendary_51: -4007416424202198356
+      popup-background legendary_6: -5145227576595112060
+      popup-background legendary_7: 3631180849519895063
+      popup-background legendary_8: -3244272861358319816
+      popup-background legendary_9: -3751069898819454916
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

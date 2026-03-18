@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 [System.Serializable]
 public class QuizQuestion
@@ -17,9 +17,11 @@ public class QuizQuestion
     public string correctAnswer;
 
     [Header("Topic")]
-    public string topic; 
+    public string topic;
 
-    // Method to check if answer is correct
+    [Header("Adaptive Learning")]
+    public string difficulty; // "easy" | "medium" | "hard"  
+
     public bool IsCorrect(string playerAnswer)
     {
         return playerAnswer.ToUpper() == correctAnswer.ToUpper();

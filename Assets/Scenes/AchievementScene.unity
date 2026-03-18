@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 68919486}
   - component: {fileID: 68919485}
   - component: {fileID: 68919484}
+  - component: {fileID: 68919487}
   m_Layer: 5
   m_Name: BadgeCard_FirstWin
   m_TagString: Untagged
@@ -213,6 +214,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 68919482}
   m_CullTransparentMesh: 1
+--- !u!114 &68919487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 68919482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e9a048aadd1ae44e8e00fb7916f7ded, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AchievementBadge
+  badgeId: first_win
+  badgeIcon: {fileID: 363834394}
+  checkmarkObject: {fileID: 1014207069}
+  badgeNameText: {fileID: 1059920395}
+  unlockedSprite: {fileID: -7262497636924242231, guid: ba1b0821bc70efc4d8321b4f3aa3f7d1, type: 3}
+  lockedSprite: {fileID: 609748218280082232, guid: bc3478ee962235c4da4c1aa551c4edd1, type: 3}
+  lockedColor: {r: 0.6, g: 0.6, b: 0.6, a: 1}
+  unlockedColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &95125992
 GameObject:
   m_ObjectHideFlags: 0
@@ -513,6 +534,59 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 363834392}
   m_CullTransparentMesh: 1
+--- !u!1 &406618002
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 406618003}
+  - component: {fileID: 406618004}
+  m_Layer: 0
+  m_Name: Achievementssceneui
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &406618003
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 406618002}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 3.91018, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &406618004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 406618002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac945707e4452ec49b02a640334f6107, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AchievementsSceneUI
+  badgeFirstWin: {fileID: 68919487}
+  badgeQuickLearn: {fileID: 2004667201}
+  badgeWeekStar: {fileID: 1605576005}
+  badge100Score: {fileID: 1258986535}
+  badgeBookworm: {fileID: 1026516086}
+  badgeMystery: {fileID: 1511103023}
+  totalPointsText: {fileID: 1411444040}
+  loadingSpinner: {fileID: 0}
+  backButton: {fileID: 1093615247}
 --- !u!1 &434855077
 GameObject:
   m_ObjectHideFlags: 0
@@ -622,7 +696,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -240, y: 0}
+  m_AnchoredPosition: {x: -240, y: 30}
   m_SizeDelta: {x: 60, y: 60}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &467090902
@@ -1116,7 +1190,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 200}
+  m_SizeDelta: {x: 0, y: 300}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &836267391
 MonoBehaviour:
@@ -1483,6 +1557,7 @@ GameObject:
   - component: {fileID: 1026516085}
   - component: {fileID: 1026516084}
   - component: {fileID: 1026516083}
+  - component: {fileID: 1026516086}
   m_Layer: 5
   m_Name: BadgeCard_BookWorm
   m_TagString: Untagged
@@ -1565,6 +1640,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1026516081}
   m_CullTransparentMesh: 1
+--- !u!114 &1026516086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1026516081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e9a048aadd1ae44e8e00fb7916f7ded, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AchievementBadge
+  badgeId: bookworm
+  badgeIcon: {fileID: 1798925295}
+  checkmarkObject: {fileID: 1673277619}
+  badgeNameText: {fileID: 851712158}
+  unlockedSprite: {fileID: -3283024045601501043, guid: c4c864dccfd314749ad7b7fd8403f713, type: 3}
+  lockedSprite: {fileID: 609748218280082232, guid: bc3478ee962235c4da4c1aa551c4edd1, type: 3}
+  lockedColor: {r: 0.6, g: 0.6, b: 0.6, a: 1}
+  unlockedColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1059920393
 GameObject:
   m_ObjectHideFlags: 0
@@ -1865,6 +1960,7 @@ GameObject:
   - component: {fileID: 1093615248}
   - component: {fileID: 1093615247}
   - component: {fileID: 1093615250}
+  - component: {fileID: 1093615251}
   m_Layer: 5
   m_Name: BackButton
   m_TagString: Untagged
@@ -1889,7 +1985,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 40, y: 0}
+  m_AnchoredPosition: {x: 40, y: 30}
   m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1093615247
@@ -1949,7 +2045,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.19607843}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.39215687}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1987,6 +2083,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneTransitionButton
   targetSceneName: DashboardScene
+--- !u!114 &1093615251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1093615245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 786bb2b1b6e976e459c732ff2ca12242, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIButtonSound
 --- !u!1 &1209198541
 GameObject:
   m_ObjectHideFlags: 0
@@ -2076,6 +2184,7 @@ GameObject:
   - component: {fileID: 1258986534}
   - component: {fileID: 1258986533}
   - component: {fileID: 1258986532}
+  - component: {fileID: 1258986535}
   m_Layer: 5
   m_Name: BadgeCard_PerfectScore
   m_TagString: Untagged
@@ -2158,6 +2267,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1258986530}
   m_CullTransparentMesh: 1
+--- !u!114 &1258986535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1258986530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e9a048aadd1ae44e8e00fb7916f7ded, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AchievementBadge
+  badgeId: 100_score
+  badgeIcon: {fileID: 222330137}
+  checkmarkObject: {fileID: 1066726095}
+  badgeNameText: {fileID: 755375451}
+  unlockedSprite: {fileID: -1044792029107636927, guid: 2edf7df38e0bd3b42b33aa87b61334db, type: 3}
+  lockedSprite: {fileID: 609748218280082232, guid: bc3478ee962235c4da4c1aa551c4edd1, type: 3}
+  lockedColor: {r: 0.6, g: 0.6, b: 0.6, a: 1}
+  unlockedColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1263080072
 GameObject:
   m_ObjectHideFlags: 0
@@ -2678,7 +2807,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 30}
   m_SizeDelta: {x: 600, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1446894780
@@ -2794,6 +2923,7 @@ GameObject:
   - component: {fileID: 1511103021}
   - component: {fileID: 1511103020}
   - component: {fileID: 1511103019}
+  - component: {fileID: 1511103023}
   m_Layer: 5
   m_Name: BadgeCard_Locked
   m_TagString: Untagged
@@ -2888,6 +3018,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1511103017}
   m_CullTransparentMesh: 1
+--- !u!114 &1511103023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1511103017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e9a048aadd1ae44e8e00fb7916f7ded, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AchievementBadge
+  badgeId: mystery_badge
+  badgeIcon: {fileID: 95125994}
+  checkmarkObject: {fileID: 1669029357}
+  badgeNameText: {fileID: 1753687511}
+  unlockedSprite: {fileID: -6897998946529238708, guid: 83ea381b5dbaab5448d8e26e00ef5e5d, type: 3}
+  lockedSprite: {fileID: 609748218280082232, guid: bc3478ee962235c4da4c1aa551c4edd1, type: 3}
+  lockedColor: {r: 0.6, g: 0.6, b: 0.6, a: 1}
+  unlockedColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1605576000
 GameObject:
   m_ObjectHideFlags: 0
@@ -2900,6 +3050,7 @@ GameObject:
   - component: {fileID: 1605576004}
   - component: {fileID: 1605576003}
   - component: {fileID: 1605576002}
+  - component: {fileID: 1605576005}
   m_Layer: 5
   m_Name: BadgeCard_WeekStar
   m_TagString: Untagged
@@ -2982,6 +3133,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1605576000}
   m_CullTransparentMesh: 1
+--- !u!114 &1605576005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1605576000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e9a048aadd1ae44e8e00fb7916f7ded, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AchievementBadge
+  badgeId: week_star
+  badgeIcon: {fileID: 1078414056}
+  checkmarkObject: {fileID: 1393564934}
+  badgeNameText: {fileID: 1323380458}
+  unlockedSprite: {fileID: 2074496024546666444, guid: 34b80532bda448b47bee52d4b6d3bfdf, type: 3}
+  lockedSprite: {fileID: 609748218280082232, guid: bc3478ee962235c4da4c1aa551c4edd1, type: 3}
+  lockedColor: {r: 0.6, g: 0.6, b: 0.6, a: 1}
+  unlockedColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1662267775
 GameObject:
   m_ObjectHideFlags: 0
@@ -3475,7 +3646,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.972549, g: 0.98039216, b: 0.9882353, a: 1}
+  m_Color: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3512,6 +3683,7 @@ GameObject:
   - component: {fileID: 2004667200}
   - component: {fileID: 2004667199}
   - component: {fileID: 2004667198}
+  - component: {fileID: 2004667201}
   m_Layer: 5
   m_Name: BadgeCard_QuickLearn
   m_TagString: Untagged
@@ -3594,6 +3766,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2004667196}
   m_CullTransparentMesh: 1
+--- !u!114 &2004667201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2004667196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e9a048aadd1ae44e8e00fb7916f7ded, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AchievementBadge
+  badgeId: quick_learn
+  badgeIcon: {fileID: 824402303}
+  checkmarkObject: {fileID: 211352477}
+  badgeNameText: {fileID: 1263080074}
+  unlockedSprite: {fileID: 2085925066834281718, guid: 39c3cdf12a058304ea5b4e53b272ab45, type: 3}
+  lockedSprite: {fileID: 609748218280082232, guid: bc3478ee962235c4da4c1aa551c4edd1, type: 3}
+  lockedColor: {r: 0.6, g: 0.6, b: 0.6, a: 1}
+  unlockedColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &2053994926
 GameObject:
   m_ObjectHideFlags: 0
@@ -3686,6 +3878,64 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2097816565
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2097816567}
+  - component: {fileID: 2097816568}
+  - component: {fileID: 2097816569}
+  m_Layer: 0
+  m_Name: AchievementManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2097816567
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2097816565}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -1.84059, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2097816568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2097816565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8593623ea1af2074398b19a84a12a327, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SceneAudioTrigger
+  trackOnLoad: 0
+--- !u!114 &2097816569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2097816565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05c524b89530d5a41945d69f64d44f74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AchievementManager
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -3693,3 +3943,5 @@ SceneRoots:
   - {fileID: 2053994929}
   - {fileID: 885494038}
   - {fileID: 1662267778}
+  - {fileID: 2097816567}
+  - {fileID: 406618003}

@@ -52,13 +52,13 @@ public class ResultsManager : MonoBehaviour
     [SerializeField] private float progressAnimationDuration = 1.5f;
     [SerializeField] private float starAnimationDelay = 0.2f;
 
-    private QuizManager quizManager;
+    [Header("QuizManager")]
+    [SerializeField] private QuizManager quizManager;
+
 
     void Start()
     {
-        // Get reference to QuizManager
-        quizManager = FindObjectOfType<QuizManager>();
-
+        
         // Setup button listeners
         if (retryButton != null)
         {
@@ -331,9 +331,11 @@ public class ResultsManager : MonoBehaviour
 
     void GoToDashboard()
     {
+        string targetScene = SessionManager.IsGuest ? "TopicSelectionScene" : "DashboardScene";
+
         if (SceneTransitionManager.Instance != null)
-        {
-            SceneTransitionManager.Instance.LoadScene("DashboardScene");
-        }
+            SceneTransitionManager.Instance.LoadScene(targetScene);
+        else
+            UnityEngine.SceneManagement.SceneManager.LoadScene(targetScene);
     }
 }

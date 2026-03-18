@@ -1,0 +1,1482 @@
+fileFormatVersion: 2
+guid: 0133b9cb0f6d14145bd1283d3fbaddba
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7057844451864445212
+    second: popup-background rare_0
+  - first:
+      213: 3679046867869610128
+    second: popup-background rare_1
+  - first:
+      213: 4447927396403493526
+    second: popup-background rare_2
+  - first:
+      213: -7191532706258403346
+    second: popup-background rare_3
+  - first:
+      213: -4060775939821596779
+    second: popup-background rare_4
+  - first:
+      213: 7546167079618095160
+    second: popup-background rare_5
+  - first:
+      213: 6993730363148551085
+    second: popup-background rare_6
+  - first:
+      213: -8249121893764018921
+    second: popup-background rare_7
+  - first:
+      213: 454455333519630011
+    second: popup-background rare_8
+  - first:
+      213: 3714172885505932739
+    second: popup-background rare_9
+  - first:
+      213: -1887748646764177329
+    second: popup-background rare_10
+  - first:
+      213: 6509174198517793688
+    second: popup-background rare_11
+  - first:
+      213: 2615017720691269859
+    second: popup-background rare_12
+  - first:
+      213: 2405373451815306861
+    second: popup-background rare_13
+  - first:
+      213: -5607535514771435080
+    second: popup-background rare_14
+  - first:
+      213: 2732009148175927404
+    second: popup-background rare_15
+  - first:
+      213: -3584914052363817409
+    second: popup-background rare_16
+  - first:
+      213: 5767115897622154059
+    second: popup-background rare_17
+  - first:
+      213: 6454308975160142002
+    second: popup-background rare_18
+  - first:
+      213: 3440867547408885729
+    second: popup-background rare_19
+  - first:
+      213: -3746844611306786215
+    second: popup-background rare_20
+  - first:
+      213: 9126343938353621929
+    second: popup-background rare_21
+  - first:
+      213: 1409681830912321260
+    second: popup-background rare_22
+  - first:
+      213: 1628582999583908255
+    second: popup-background rare_23
+  - first:
+      213: 83365543538858907
+    second: popup-background rare_24
+  - first:
+      213: -6002823272681740703
+    second: popup-background rare_25
+  - first:
+      213: 716576405531485616
+    second: popup-background rare_26
+  - first:
+      213: -8243939540409925749
+    second: popup-background rare_27
+  - first:
+      213: -4967805295016553072
+    second: popup-background rare_28
+  - first:
+      213: -595172951308500889
+    second: popup-background rare_29
+  - first:
+      213: 1847223228136082989
+    second: popup-background rare_30
+  - first:
+      213: 7553149714718899354
+    second: popup-background rare_31
+  - first:
+      213: 2341995782267858521
+    second: popup-background rare_32
+  - first:
+      213: -4962569588142197858
+    second: popup-background rare_33
+  - first:
+      213: 738852635296032286
+    second: popup-background rare_34
+  - first:
+      213: -7460102433694190277
+    second: popup-background rare_35
+  - first:
+      213: -3656141631678160887
+    second: popup-background rare_36
+  - first:
+      213: 2905088687437100744
+    second: popup-background rare_37
+  - first:
+      213: 5812592217056370187
+    second: popup-background rare_38
+  - first:
+      213: -2493981819142973568
+    second: popup-background rare_39
+  - first:
+      213: -3380651773036648367
+    second: popup-background rare_40
+  - first:
+      213: -6734388967359242173
+    second: popup-background rare_41
+  - first:
+      213: 5722761045673444670
+    second: popup-background rare_42
+  - first:
+      213: 3654261178964790473
+    second: popup-background rare_43
+  - first:
+      213: -2714686474938279513
+    second: popup-background rare_44
+  - first:
+      213: 8768882301709421266
+    second: popup-background rare_45
+  - first:
+      213: -6467075970336329271
+    second: popup-background rare_46
+  - first:
+      213: -5622372141099615440
+    second: popup-background rare_47
+  - first:
+      213: -6642215191137612443
+    second: popup-background rare_48
+  - first:
+      213: 6810912819841882427
+    second: popup-background rare_49
+  - first:
+      213: -5891455780789914561
+    second: popup-background rare_50
+  - first:
+      213: -6948073565499517495
+    second: popup-background rare_51
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: popup-background rare_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1000
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ee78a67ddf7d0e90800000000000000
+      internalID: -7057844451864445212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background rare_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 395
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 090b16742a99e0330800000000000000
+      internalID: 3679046867869610128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background rare_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 383
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69abb51a6663abd30800000000000000
+      internalID: 4447927396403493526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background rare_3
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 386
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eef3dd42b1b823c90800000000000000
+      internalID: -7191532706258403346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background rare_4
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 371
+        width: 5
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59f0b723cc935a7c0800000000000000
+      internalID: -4060775939821596779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background rare_5
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 352
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83822644afe59b860800000000000000
+      internalID: 7546167079618095160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background rare_6
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 345
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da3455ef5b8be0160800000000000000
+      internalID: 6993730363148551085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background rare_7
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 337
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71d4c45e75b358d80800000000000000
+      internalID: -8249121893764018921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background rare_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 321
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbe18b0d7bc8e4600800000000000000
+      internalID: 454455333519630011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background rare_9
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 301
+        width: 14
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cdf7f29f846b8330800000000000000
+      internalID: 3714172885505932739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background rare_10
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 325
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4895648b9e5dc5e0800000000000000
+      internalID: -1887748646764177329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background rare_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 304
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8938acb427b355a50800000000000000
+      internalID: 6509174198517793688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background rare_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 294
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e0a72313c86a4420800000000000000
+      internalID: 2615017720691269859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background rare_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 267
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d664b93096a916120800000000000000
+      internalID: 2405373451815306861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background rare_14
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 281
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b159a8c8280e22b0800000000000000
+      internalID: -5607535514771435080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background rare_15
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 259
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c68c42078db0ae520800000000000000
+      internalID: 2732009148175927404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background rare_16
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 249
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3e6c8eb9a3df3ec0800000000000000
+      internalID: -3584914052363817409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background rare_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 227
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4bc6487a59e80050800000000000000
+      internalID: 5767115897622154059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background rare_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 216
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b8290701df429950800000000000000
+      internalID: 6454308975160142002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background rare_19
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 205
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e7e97acdca60cf20800000000000000
+      internalID: 3440867547408885729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background rare_20
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 210
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 952f87a7da8800cc0800000000000000
+      internalID: -3746844611306786215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background rare_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 188
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ab6b9f557947ae70800000000000000
+      internalID: 9126343938353621929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background rare_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 177
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce6e9d90822309310800000000000000
+      internalID: 1409681830912321260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background rare_23
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 157
+        width: 10
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9160790c93e99610800000000000000
+      internalID: 1628582999583908255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background rare_24
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 154
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9b1429258c282100800000000000000
+      internalID: 83365543538858907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background rare_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 139
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1666b5ea900b1bca0800000000000000
+      internalID: -6002823272681740703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background rare_26
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 143
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b5612ab17ac1f900800000000000000
+      internalID: 716576405531485616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background rare_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 131
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8fb1109aa4a79d80800000000000000
+      internalID: -8243939540409925749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background rare_28
+      rect:
+        serializedVersion: 2
+        x: 983
+        y: 124
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 095db3d976fce0bb0800000000000000
+      internalID: -4967805295016553072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background rare_29
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 115
+        width: 5
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7600659aa558db7f0800000000000000
+      internalID: -595172951308500889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background rare_30
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 96
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2ec6ed2db7a2a910800000000000000
+      internalID: 1847223228136082989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background rare_31
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 89
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9cb921b5ad22d860800000000000000
+      internalID: 7553149714718899354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background rare_32
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 68
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95ee98b61c0708020800000000000000
+      internalID: 2341995782267858521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background rare_33
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 81
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e93b0ad9049612bb0800000000000000
+      internalID: -4962569588142197858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background rare_34
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e166e24ae8ee04a00800000000000000
+      internalID: 738852635296032286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background rare_35
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 49
+        width: 11
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3571a3ac54687890800000000000000
+      internalID: -7460102433694190277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background rare_36
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 0
+        width: 23
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9006e4b9e86c24dc0800000000000000
+      internalID: -3656141631678160887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background rare_37
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 0
+        width: 9
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c6b1b7f4c2f05820800000000000000
+      internalID: 2905088687437100744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background rare_38
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0e58d133d97aa050800000000000000
+      internalID: 5812592217056370187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background rare_39
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 0
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08753b9cfb8936dd0800000000000000
+      internalID: -2493981819142973568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background rare_40
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 0
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1582bd6bf138511d0800000000000000
+      internalID: -3380651773036648367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background rare_41
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 0
+        width: 13
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3402e3d1ae4aa82a0800000000000000
+      internalID: -6734388967359242173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background rare_42
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 0
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e350fcdb9d45b6f40800000000000000
+      internalID: 5722761045673444670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background rare_43
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 0
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cc42b06e2b86b230800000000000000
+      internalID: 3654261178964790473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background rare_44
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 0
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a91fb8b80f735ad0800000000000000
+      internalID: -2714686474938279513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background rare_45
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 0
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2da899e6ef351b970800000000000000
+      internalID: 8768882301709421266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background rare_46
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 0
+        width: 20
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c173a44ba45046a0800000000000000
+      internalID: -6467075970336329271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background rare_47
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 0
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03b74b6835259f1b0800000000000000
+      internalID: -5622372141099615440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background rare_48
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 0
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56d0a82c97c12d3a0800000000000000
+      internalID: -6642215191137612443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background rare_49
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 0
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3954d6bf19358e50800000000000000
+      internalID: 6810912819841882427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background rare_50
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 0
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3478108e285d3ea0800000000000000
+      internalID: -5891455780789914561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background rare_51
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 0
+        width: 8
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c59e1797eb739f90800000000000000
+      internalID: -6948073565499517495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      popup-background rare_0: -7057844451864445212
+      popup-background rare_1: 3679046867869610128
+      popup-background rare_10: -1887748646764177329
+      popup-background rare_11: 6509174198517793688
+      popup-background rare_12: 2615017720691269859
+      popup-background rare_13: 2405373451815306861
+      popup-background rare_14: -5607535514771435080
+      popup-background rare_15: 2732009148175927404
+      popup-background rare_16: -3584914052363817409
+      popup-background rare_17: 5767115897622154059
+      popup-background rare_18: 6454308975160142002
+      popup-background rare_19: 3440867547408885729
+      popup-background rare_2: 4447927396403493526
+      popup-background rare_20: -3746844611306786215
+      popup-background rare_21: 9126343938353621929
+      popup-background rare_22: 1409681830912321260
+      popup-background rare_23: 1628582999583908255
+      popup-background rare_24: 83365543538858907
+      popup-background rare_25: -6002823272681740703
+      popup-background rare_26: 716576405531485616
+      popup-background rare_27: -8243939540409925749
+      popup-background rare_28: -4967805295016553072
+      popup-background rare_29: -595172951308500889
+      popup-background rare_3: -7191532706258403346
+      popup-background rare_30: 1847223228136082989
+      popup-background rare_31: 7553149714718899354
+      popup-background rare_32: 2341995782267858521
+      popup-background rare_33: -4962569588142197858
+      popup-background rare_34: 738852635296032286
+      popup-background rare_35: -7460102433694190277
+      popup-background rare_36: -3656141631678160887
+      popup-background rare_37: 2905088687437100744
+      popup-background rare_38: 5812592217056370187
+      popup-background rare_39: -2493981819142973568
+      popup-background rare_4: -4060775939821596779
+      popup-background rare_40: -3380651773036648367
+      popup-background rare_41: -6734388967359242173
+      popup-background rare_42: 5722761045673444670
+      popup-background rare_43: 3654261178964790473
+      popup-background rare_44: -2714686474938279513
+      popup-background rare_45: 8768882301709421266
+      popup-background rare_46: -6467075970336329271
+      popup-background rare_47: -5622372141099615440
+      popup-background rare_48: -6642215191137612443
+      popup-background rare_49: 6810912819841882427
+      popup-background rare_5: 7546167079618095160
+      popup-background rare_50: -5891455780789914561
+      popup-background rare_51: -6948073565499517495
+      popup-background rare_6: 6993730363148551085
+      popup-background rare_7: -8249121893764018921
+      popup-background rare_8: 454455333519630011
+      popup-background rare_9: 3714172885505932739
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

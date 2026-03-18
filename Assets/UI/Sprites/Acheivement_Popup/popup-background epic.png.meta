@@ -1,0 +1,1482 @@
+fileFormatVersion: 2
+guid: 8ee47ba8126552e4aaa7882de3f139ee
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4540944309148120426
+    second: popup-background epic_0
+  - first:
+      213: -6105027902625331762
+    second: popup-background epic_1
+  - first:
+      213: -593281584904920799
+    second: popup-background epic_2
+  - first:
+      213: -8664631132153838205
+    second: popup-background epic_3
+  - first:
+      213: 6313313306982588252
+    second: popup-background epic_4
+  - first:
+      213: -3877941281173821019
+    second: popup-background epic_5
+  - first:
+      213: 2364621822201262082
+    second: popup-background epic_6
+  - first:
+      213: -8748116627643710050
+    second: popup-background epic_7
+  - first:
+      213: 5351574408653703463
+    second: popup-background epic_8
+  - first:
+      213: 5609188720387065603
+    second: popup-background epic_9
+  - first:
+      213: 3438265530732053308
+    second: popup-background epic_10
+  - first:
+      213: -1238440191075109417
+    second: popup-background epic_11
+  - first:
+      213: -5602075171728825237
+    second: popup-background epic_12
+  - first:
+      213: -9097199309879443751
+    second: popup-background epic_13
+  - first:
+      213: -464676881752933137
+    second: popup-background epic_14
+  - first:
+      213: 641292193260343440
+    second: popup-background epic_15
+  - first:
+      213: -6912758950494598460
+    second: popup-background epic_16
+  - first:
+      213: 6249655787607861561
+    second: popup-background epic_17
+  - first:
+      213: -1023223706606007737
+    second: popup-background epic_18
+  - first:
+      213: 6591154825329654115
+    second: popup-background epic_19
+  - first:
+      213: -9082211885373407437
+    second: popup-background epic_20
+  - first:
+      213: 1261886080219226343
+    second: popup-background epic_21
+  - first:
+      213: -5905428160486191245
+    second: popup-background epic_22
+  - first:
+      213: 8147799214068918285
+    second: popup-background epic_23
+  - first:
+      213: 5202972981460956566
+    second: popup-background epic_24
+  - first:
+      213: 7521210790571883562
+    second: popup-background epic_25
+  - first:
+      213: 8965081030275066265
+    second: popup-background epic_26
+  - first:
+      213: 731849038273955375
+    second: popup-background epic_27
+  - first:
+      213: -2081450778166357060
+    second: popup-background epic_28
+  - first:
+      213: 4132497608721671565
+    second: popup-background epic_29
+  - first:
+      213: 8188345628180813227
+    second: popup-background epic_30
+  - first:
+      213: 8323975794002374714
+    second: popup-background epic_31
+  - first:
+      213: -8728455584632666856
+    second: popup-background epic_32
+  - first:
+      213: 587602548344744471
+    second: popup-background epic_33
+  - first:
+      213: 2139274578627176223
+    second: popup-background epic_34
+  - first:
+      213: 2774577145069562999
+    second: popup-background epic_35
+  - first:
+      213: 5990327924194871712
+    second: popup-background epic_36
+  - first:
+      213: 5164380106495340018
+    second: popup-background epic_37
+  - first:
+      213: 6133341702788842399
+    second: popup-background epic_38
+  - first:
+      213: -1841506420111639137
+    second: popup-background epic_39
+  - first:
+      213: -6741234698435244063
+    second: popup-background epic_40
+  - first:
+      213: 9117249158150342070
+    second: popup-background epic_41
+  - first:
+      213: -5860262456066062631
+    second: popup-background epic_42
+  - first:
+      213: -371304657646656831
+    second: popup-background epic_43
+  - first:
+      213: 5571112080894160782
+    second: popup-background epic_44
+  - first:
+      213: 4571987595649458868
+    second: popup-background epic_45
+  - first:
+      213: 1371334191258841095
+    second: popup-background epic_46
+  - first:
+      213: 8375303551276152012
+    second: popup-background epic_47
+  - first:
+      213: 8544971596638076021
+    second: popup-background epic_48
+  - first:
+      213: 6919210253700909479
+    second: popup-background epic_49
+  - first:
+      213: -3603910022816535781
+    second: popup-background epic_50
+  - first:
+      213: 3799477723353763365
+    second: popup-background epic_51
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: popup-background epic_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1000
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69a0564b5335bf0c0800000000000000
+      internalID: -4540944309148120426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background epic_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 395
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec54b28e775964ba0800000000000000
+      internalID: -6105027902625331762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background epic_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 383
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12126f7ba8d34c7f0800000000000000
+      internalID: -593281584904920799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background epic_3
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 386
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3850e2a74eb01c780800000000000000
+      internalID: -8664631132153838205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background epic_4
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 371
+        width: 5
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5f917ad0056d9750800000000000000
+      internalID: 6313313306982588252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background epic_5
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 352
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a9afc373f8ce2ac0800000000000000
+      internalID: -3877941281173821019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background epic_6
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 345
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 200717cd403d0d020800000000000000
+      internalID: 2364621822201262082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background epic_7
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 337
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e95cb93d642789680800000000000000
+      internalID: -8748116627643710050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background epic_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 321
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72900e0229c944a40800000000000000
+      internalID: 5351574408653703463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background epic_9
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 301
+        width: 14
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3078cc42c67d7dd40800000000000000
+      internalID: 5609188720387065603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background epic_10
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 325
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3301c2984c27bf20800000000000000
+      internalID: 3438265530732053308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background epic_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 304
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d5b66f253d20dee0800000000000000
+      internalID: -1238440191075109417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background epic_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 294
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b646118ff4e6142b0800000000000000
+      internalID: -5602075171728825237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background epic_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 267
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9def4bb3d6140c180800000000000000
+      internalID: -9097199309879443751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background epic_14
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 281
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fecb7c786d22d89f0800000000000000
+      internalID: -464676881752933137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background epic_15
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 259
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09093802ad356e800800000000000000
+      internalID: 641292193260343440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background epic_16
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 249
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ca0ed12c52f010a0800000000000000
+      internalID: -6912758950494598460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background epic_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 227
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 939a4d4a3dc3bb650800000000000000
+      internalID: 6249655787607861561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background epic_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 216
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74a8df9c577ccc1f0800000000000000
+      internalID: -1023223706606007737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background epic_19
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 205
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3693067646c787b50800000000000000
+      internalID: 6591154825329654115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background epic_20
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 210
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33fbc7de86085f180800000000000000
+      internalID: -9082211885373407437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background epic_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 188
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e02a7644be138110800000000000000
+      internalID: 1261886080219226343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background epic_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 177
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37fc1a75064bb0ea0800000000000000
+      internalID: -5905428160486191245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background epic_23
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 157
+        width: 10
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d08e8cf573cc21170800000000000000
+      internalID: 8147799214068918285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background epic_24
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 154
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6957fef2c5ca43840800000000000000
+      internalID: 5202972981460956566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background epic_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 139
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2c3fdc6d55b06860800000000000000
+      internalID: 7521210790571883562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background epic_26
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 143
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9996320b2bd5a6c70800000000000000
+      internalID: 8965081030275066265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background epic_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 131
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f26c783a2dc082a00800000000000000
+      internalID: 731849038273955375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background epic_28
+      rect:
+        serializedVersion: 2
+        x: 983
+        y: 124
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb31fe59b833d13e0800000000000000
+      internalID: -2081450778166357060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background epic_29
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 115
+        width: 5
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d85a1032ea4995930800000000000000
+      internalID: 4132497608721671565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background epic_30
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 96
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba517d117f8d2a170800000000000000
+      internalID: 8188345628180813227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background epic_31
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 89
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a303670e1e3b48370800000000000000
+      internalID: 8323975794002374714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background epic_32
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 68
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 815023024eb4ed680800000000000000
+      internalID: -8728455584632666856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background epic_33
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 81
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71ae33b8765972800800000000000000
+      internalID: 587602548344744471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background epic_34
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f17a81815ea30bd10800000000000000
+      internalID: 2139274578627176223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background epic_35
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 49
+        width: 11
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77ce9cd8637418620800000000000000
+      internalID: 2774577145069562999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background epic_36
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 0
+        width: 23
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a90db9428be12350800000000000000
+      internalID: 5990327924194871712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background epic_37
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 0
+        width: 9
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fdafb448509ba740800000000000000
+      internalID: 5164380106495340018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background epic_38
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9381d868c10e1550800000000000000
+      internalID: 6133341702788842399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background epic_39
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 0
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9df4a9eaa7a176e0800000000000000
+      internalID: -1841506420111639137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background epic_40
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 0
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1efca3422c25272a0800000000000000
+      internalID: -6741234698435244063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background epic_41
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 0
+        width: 13
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b5c748ddc9f68e70800000000000000
+      internalID: 9117249158150342070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background epic_42
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 0
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d6cf9f585a2caea0800000000000000
+      internalID: -5860262456066062631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background epic_43
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 0
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c2e581916cd8daf0800000000000000
+      internalID: -371304657646656831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background epic_44
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 0
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8f6599abe0905d40800000000000000
+      internalID: 5571112080894160782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background epic_45
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 0
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b2ad2cae76f27f30800000000000000
+      internalID: 4571987595649458868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background epic_46
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 0
+        width: 20
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 700b45a6e25f70310800000000000000
+      internalID: 1371334191258841095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background epic_47
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 0
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc4f1e3a43e0b3470800000000000000
+      internalID: 8375303551276152012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background epic_48
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 0
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57c3a69d466d59670800000000000000
+      internalID: 8544971596638076021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background epic_49
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 0
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a94512f019f50060800000000000000
+      internalID: 6919210253700909479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background epic_50
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 0
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1bec87bde65cfdc0800000000000000
+      internalID: -3603910022816535781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup-background epic_51
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 0
+        width: 8
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52ec280ebd47ab430800000000000000
+      internalID: 3799477723353763365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      popup-background epic_0: -4540944309148120426
+      popup-background epic_1: -6105027902625331762
+      popup-background epic_10: 3438265530732053308
+      popup-background epic_11: -1238440191075109417
+      popup-background epic_12: -5602075171728825237
+      popup-background epic_13: -9097199309879443751
+      popup-background epic_14: -464676881752933137
+      popup-background epic_15: 641292193260343440
+      popup-background epic_16: -6912758950494598460
+      popup-background epic_17: 6249655787607861561
+      popup-background epic_18: -1023223706606007737
+      popup-background epic_19: 6591154825329654115
+      popup-background epic_2: -593281584904920799
+      popup-background epic_20: -9082211885373407437
+      popup-background epic_21: 1261886080219226343
+      popup-background epic_22: -5905428160486191245
+      popup-background epic_23: 8147799214068918285
+      popup-background epic_24: 5202972981460956566
+      popup-background epic_25: 7521210790571883562
+      popup-background epic_26: 8965081030275066265
+      popup-background epic_27: 731849038273955375
+      popup-background epic_28: -2081450778166357060
+      popup-background epic_29: 4132497608721671565
+      popup-background epic_3: -8664631132153838205
+      popup-background epic_30: 8188345628180813227
+      popup-background epic_31: 8323975794002374714
+      popup-background epic_32: -8728455584632666856
+      popup-background epic_33: 587602548344744471
+      popup-background epic_34: 2139274578627176223
+      popup-background epic_35: 2774577145069562999
+      popup-background epic_36: 5990327924194871712
+      popup-background epic_37: 5164380106495340018
+      popup-background epic_38: 6133341702788842399
+      popup-background epic_39: -1841506420111639137
+      popup-background epic_4: 6313313306982588252
+      popup-background epic_40: -6741234698435244063
+      popup-background epic_41: 9117249158150342070
+      popup-background epic_42: -5860262456066062631
+      popup-background epic_43: -371304657646656831
+      popup-background epic_44: 5571112080894160782
+      popup-background epic_45: 4571987595649458868
+      popup-background epic_46: 1371334191258841095
+      popup-background epic_47: 8375303551276152012
+      popup-background epic_48: 8544971596638076021
+      popup-background epic_49: 6919210253700909479
+      popup-background epic_5: -3877941281173821019
+      popup-background epic_50: -3603910022816535781
+      popup-background epic_51: 3799477723353763365
+      popup-background epic_6: 2364621822201262082
+      popup-background epic_7: -8748116627643710050
+      popup-background epic_8: 5351574408653703463
+      popup-background epic_9: 5609188720387065603
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

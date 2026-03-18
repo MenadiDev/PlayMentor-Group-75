@@ -6,17 +6,35 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/MainMenuScene.unity
+    guid: 78b93139fe6696445a09765fd0a0f566
+  - enabled: 1
     path: Assets/Scenes/LoginScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
     path: Assets/Scenes/DashboardScene.unity
-    guid: 187b5360ee2503b4ba9fe16ee6f64842
+    guid: 24db7d6552bf44346a53ed50333167f9
+  - enabled: 1
+    path: Assets/Scenes/TopicSelectionScene.unity
+    guid: ff95d7a0b899bf84d963e998c12e3fb3
   - enabled: 1
     path: Assets/Scenes/QuizScene.unity
     guid: 9aedba6bae785094f86f7d8232010e18
   - enabled: 1
+    path: Assets/Scenes/LeaderboardScene.unity
+    guid: dbbf075e71d7d3f438ee9f0bb0ae790d
+  - enabled: 1
     path: Assets/Scenes/AchievementScene.unity
     guid: ec8468df263ac614fa0438fd910b7987
+  - enabled: 1
+    path: Assets/Scenes/ProfileScene.unity
+    guid: 8fc3003404792584ca591d5e7d292c3b
+  - enabled: 1
+    path: Assets/Scenes/SettingsScene.unity
+    guid: 787b34be56db0684f851a872ee00980c
+  - enabled: 1
+    path: Assets/Scenes/NotifScene.unity
+    guid: 58493384ce95f284184ae8608ee7a18e
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

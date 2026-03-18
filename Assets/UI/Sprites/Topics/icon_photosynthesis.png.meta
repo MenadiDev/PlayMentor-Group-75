@@ -1,0 +1,494 @@
+fileFormatVersion: 2
+guid: 10ba3931b5d805642a930efeb9101884
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2582796822508942394
+    second: icon_photosynthesis_0
+  - first:
+      213: 7708715299918775033
+    second: icon_photosynthesis_1
+  - first:
+      213: -8054393052664454812
+    second: icon_photosynthesis_2
+  - first:
+      213: -3978240506858982347
+    second: icon_photosynthesis_3
+  - first:
+      213: -4912353483226087848
+    second: icon_photosynthesis_4
+  - first:
+      213: -8872503124757222479
+    second: icon_photosynthesis_5
+  - first:
+      213: 8106459265380334048
+    second: icon_photosynthesis_6
+  - first:
+      213: 3455415612612580729
+    second: icon_photosynthesis_7
+  - first:
+      213: -5389884700742069301
+    second: icon_photosynthesis_8
+  - first:
+      213: 4490127341263026480
+    second: icon_photosynthesis_9
+  - first:
+      213: -5476335211091537098
+    second: icon_photosynthesis_10
+  - first:
+      213: 2101473834999250594
+    second: icon_photosynthesis_11
+  - first:
+      213: 384782515642345224
+    second: icon_photosynthesis_12
+  - first:
+      213: 2822898081992416475
+    second: icon_photosynthesis_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: icon_photosynthesis_0
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 436
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cbc85369ff082cd0800000000000000
+      internalID: -2582796822508942394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_photosynthesis_1
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 453
+        width: 6
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f2074609bbdafa60800000000000000
+      internalID: 7708715299918775033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_photosynthesis_2
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 436
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 461af8e413c093090800000000000000
+      internalID: -8054393052664454812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_photosynthesis_3
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 393
+        width: 23
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 534b99d26537ac8c0800000000000000
+      internalID: -3978240506858982347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_photosynthesis_4
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 351
+        width: 126
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85ef725a880d3dbb0800000000000000
+      internalID: -4912353483226087848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_photosynthesis_5
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 339
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bb6d44aa698ed480800000000000000
+      internalID: -8872503124757222479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_photosynthesis_6
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 316
+        width: 6
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e93b2380cdef7070800000000000000
+      internalID: 8106459265380334048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_photosynthesis_7
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 339
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9759c1d213a14ff20800000000000000
+      internalID: 3455415612612580729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_photosynthesis_8
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 23
+        width: 219
+        height: 305
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc3d4f7eb684335b0800000000000000
+      internalID: -5389884700742069301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_photosynthesis_9
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 215
+        width: 52
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0397044f603205e30800000000000000
+      internalID: 4490127341263026480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_photosynthesis_10
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 232
+        width: 49
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 633dcefe3262004b0800000000000000
+      internalID: -5476335211091537098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_photosynthesis_11
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 252
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ae78ef915fe92d10800000000000000
+      internalID: 2101473834999250594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_photosynthesis_12
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 198
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 807a4a8c8a5075500800000000000000
+      internalID: 384782515642345224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_photosynthesis_13
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 176
+        width: 78
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdc1a4669d2fc2720800000000000000
+      internalID: 2822898081992416475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      icon_photosynthesis_0: -2582796822508942394
+      icon_photosynthesis_1: 7708715299918775033
+      icon_photosynthesis_10: -5476335211091537098
+      icon_photosynthesis_11: 2101473834999250594
+      icon_photosynthesis_12: 384782515642345224
+      icon_photosynthesis_13: 2822898081992416475
+      icon_photosynthesis_2: -8054393052664454812
+      icon_photosynthesis_3: -3978240506858982347
+      icon_photosynthesis_4: -4912353483226087848
+      icon_photosynthesis_5: -8872503124757222479
+      icon_photosynthesis_6: 8106459265380334048
+      icon_photosynthesis_7: 3455415612612580729
+      icon_photosynthesis_8: -5389884700742069301
+      icon_photosynthesis_9: 4490127341263026480
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
