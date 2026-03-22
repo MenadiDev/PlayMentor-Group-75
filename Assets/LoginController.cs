@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using System.Threading.Tasks;
 
 public class LoginController : MonoBehaviour
 {
@@ -17,7 +16,6 @@ public class LoginController : MonoBehaviour
 
     void Start()
     {
-        // Setup button listeners
         if (loginButton != null)
         {
             loginButton.onClick.RemoveAllListeners();
@@ -30,32 +28,29 @@ public class LoginController : MonoBehaviour
             registerButton.onClick.AddListener(() => OnRegisterClicked());
         }
 
-        // Hide feedback initially
-        if (feedbackText != null)
-        {
-            feedbackText.gameObject.SetActive(false);
-        }
+        if (feedbackText != null) feedbackText.gameObject.SetActive(false);
+        if (loadingIndicator != null) loadingIndicator.SetActive(false);
 
-        if (loadingIndicator != null)
-        {
-            loadingIndicator.SetActive(false);
-        }
-
-        // Wait for Firebase to initialize
         StartCoroutine(WaitForFirebase());
     }
 
     System.Collections.IEnumerator WaitForFirebase()
     {
-        // Wait until Firebase is ready
         while (FirebaseManager.Instance == null || !FirebaseManager.Instance.IsInitialized)
-        {
             yield return null;
+
+        UnityEngine.Debug.Log("Firebase ready");
+
+        // If the player was already logged in (session persisted by Firebase)
+        // skip the login screen and go straight to their dashboard
+        if (FirebaseManager.Instance.CurrentUser != null)
+        {
+            UnityEngine.Debug.Log("Already signed in — skipping login screen");
+            NavigateToDashboard();
+            yield break;
         }
 
-        UnityEngine.Debug.Log("✅ Firebase ready, login system active");
-
-        // Subscribe to auth state changes
+        // Otherwise subscribe to auth state for when they log in manually
         FirebaseManager.Instance.OnAuthStateChanged += OnAuthStateChanged;
     }
 
@@ -64,39 +59,22 @@ public class LoginController : MonoBehaviour
         string email = emailInput.text.Trim();
         string password = passwordInput.text;
 
-        // Validation
-        if (string.IsNullOrEmpty(email))
-        {
-            ShowFeedback("Please enter your email", false);
-            return;
-        }
+        if (string.IsNullOrEmpty(email)) { ShowFeedback("Please enter your email", false); return; }
+        if (!email.Contains("@")) { ShowFeedback("Please enter a valid email", false); return; }
+        if (string.IsNullOrEmpty(password)) { ShowFeedback("Please enter your password", false); return; }
 
-        if (string.IsNullOrEmpty(password))
-        {
-            ShowFeedback("Please enter your password", false);
-            return;
-        }
-
-        if (!email.Contains("@"))
-        {
-            ShowFeedback("Please enter a valid email", false);
-            return;
-        }
-
-        // Disable buttons during login
         SetButtonsInteractable(false);
         ShowFeedback("Signing in...", true);
         if (loadingIndicator != null) loadingIndicator.SetActive(true);
 
-        // Attempt login
         bool success = await FirebaseManager.Instance.SignInWithEmail(email, password);
 
         if (loadingIndicator != null) loadingIndicator.SetActive(false);
 
         if (success)
         {
-            ShowFeedback("Welcome back! 🎉", true);
-            // Navigation happens in OnAuthStateChanged
+            ShowFeedback("Welcome back!", true);
+            // NavigateToDashboard is called via OnAuthStateChanged
         }
         else
         {
@@ -110,48 +88,24 @@ public class LoginController : MonoBehaviour
         string email = emailInput.text.Trim();
         string password = passwordInput.text;
 
-        // Validation
-        if (string.IsNullOrEmpty(email))
-        {
-            ShowFeedback("Please enter your email", false);
-            return;
-        }
+        if (string.IsNullOrEmpty(email)) { ShowFeedback("Please enter your email", false); return; }
+        if (!email.Contains("@")) { ShowFeedback("Please enter a valid email", false); return; }
+        if (string.IsNullOrEmpty(password)) { ShowFeedback("Please enter a password", false); return; }
+        if (password.Length < 6) { ShowFeedback("Password must be at least 6 characters", false); return; }
 
-        if (!email.Contains("@"))
-        {
-            ShowFeedback("Please enter a valid email", false);
-            return;
-        }
-
-        if (string.IsNullOrEmpty(password))
-        {
-            ShowFeedback("Please enter a password", false);
-            return;
-        }
-
-        if (password.Length < 6)
-        {
-            ShowFeedback("Password must be at least 6 characters", false);
-            return;
-        }
-
-        // Disable buttons during registration
         SetButtonsInteractable(false);
         ShowFeedback("Creating your account...", true);
         if (loadingIndicator != null) loadingIndicator.SetActive(true);
 
-        // Extract username from email (before @)
         string username = email.Split('@')[0];
-
-        // Attempt registration
         bool success = await FirebaseManager.Instance.SignUpWithEmail(email, password, username);
 
         if (loadingIndicator != null) loadingIndicator.SetActive(false);
 
         if (success)
         {
-            ShowFeedback("Account created! Welcome! 🎉", true);
-            // Navigation happens in OnAuthStateChanged
+            ShowFeedback("Account created! Welcome!", true);
+            // NavigateToDashboard is called via OnAuthStateChanged
         }
         else
         {
@@ -164,10 +118,7 @@ public class LoginController : MonoBehaviour
     {
         if (isSignedIn)
         {
-            // User is signed in, navigate to dashboard
-            UnityEngine.Debug.Log("✅ User authenticated, navigating to dashboard");
-
-            // Small delay so user sees success message
+            UnityEngine.Debug.Log("User authenticated — navigating to dashboard");
             Invoke("NavigateToDashboard", 0.5f);
         }
     }
@@ -175,9 +126,9 @@ public class LoginController : MonoBehaviour
     void NavigateToDashboard()
     {
         if (SceneTransitionManager.Instance != null)
-        {
             SceneTransitionManager.Instance.LoadScene("DashboardScene");
-        }
+        else
+            UnityEngine.SceneManagement.SceneManager.LoadScene("DashboardScene");
     }
 
     void ShowFeedback(string message, bool isSuccess)
@@ -185,10 +136,11 @@ public class LoginController : MonoBehaviour
         if (feedbackText != null)
         {
             feedbackText.text = message;
-            feedbackText.color = isSuccess ? new Color(0.3f, 0.8f, 0.3f) : new Color(0.9f, 0.3f, 0.3f);
+            feedbackText.color = isSuccess
+                ? new Color(0.3f, 0.8f, 0.3f)
+                : new Color(0.9f, 0.3f, 0.3f);
             feedbackText.gameObject.SetActive(true);
         }
-
         UnityEngine.Debug.Log(message);
     }
 
@@ -202,10 +154,7 @@ public class LoginController : MonoBehaviour
 
     void OnDestroy()
     {
-        // Unsubscribe from events
         if (FirebaseManager.Instance != null)
-        {
             FirebaseManager.Instance.OnAuthStateChanged -= OnAuthStateChanged;
-        }
     }
 }
