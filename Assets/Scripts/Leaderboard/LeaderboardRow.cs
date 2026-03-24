@@ -4,19 +4,10 @@ using UnityEngine.UI;
 using Image = UnityEngine.UI.Image;
 using static System.Net.Mime.MediaTypeNames;
 
-/// <summary>
-/// Attached to the LeaderboardRow prefab.
-/// LeaderboardManager calls Setup() on each instantiated row
-/// to populate it with one player's data.
-/// </summary>
+
 public class LeaderboardRow : MonoBehaviour
 {
-    // ─────────────────────────────────────────────
-    // Inspector References
-    // Select the LeaderboardRow PREFAB and drag
-    // each child object into these fields
-    // ─────────────────────────────────────────────
-
+    
     [Header("Rank")]
     [SerializeField] private TMP_Text rankText;
 
@@ -26,7 +17,7 @@ public class LeaderboardRow : MonoBehaviour
 
     [Header("Player Info")]
     [SerializeField] private TMP_Text playerNameText;
-    [SerializeField] private GameObject youTagObject; // "YOU" label — activated only for current user
+    [SerializeField] private GameObject youTagObject; 
 
     [Header("Points")]
     [SerializeField] private TMP_Text pointsText;
@@ -34,25 +25,24 @@ public class LeaderboardRow : MonoBehaviour
 
     [Header("Row Background")]
     [SerializeField] private Image rowBackgroundImage;
-    [SerializeField] private Sprite normalRowSprite;   // row_leaderboard_normal.png
-    [SerializeField] private Sprite meRowSprite;       // row_leaderboard_me.png
+    [SerializeField] private Sprite normalRowSprite;   
+    [SerializeField] private Sprite meRowSprite;     
 
-    // ─────────────────────────────────────────────
+    
     // Predefined Colors
-    // ─────────────────────────────────────────────
-    private static readonly Color GoldColor = new Color(1.00f, 0.85f, 0.00f); // #FFD700
-    private static readonly Color SilverColor = new Color(0.75f, 0.75f, 0.75f); // #C0C0C0
-    private static readonly Color BronzeColor = new Color(0.80f, 0.50f, 0.20f); // #CD7F32
+    
+    private static readonly Color GoldColor = new Color(1.00f, 0.85f, 0.00f); 
+    private static readonly Color SilverColor = new Color(0.75f, 0.75f, 0.75f); 
+    private static readonly Color BronzeColor = new Color(0.80f, 0.50f, 0.20f); 
     private static readonly Color NormalColor = Color.white;
-    private static readonly Color UpColor = new Color(0.07f, 0.73f, 0.51f); // #10B981 green
-    private static readonly Color DownColor = new Color(0.94f, 0.27f, 0.27f); // #EF4444 red
-    private static readonly Color NeutralColor = new Color(1f, 1f, 1f, 0.3f);    // dimmed white
-    private static readonly Color MeAvatarColor = new Color(0.49f, 0.23f, 0.93f, 1f);  // #7C3AED
+    private static readonly Color UpColor = new Color(0.07f, 0.73f, 0.51f); 
+    private static readonly Color DownColor = new Color(0.94f, 0.27f, 0.27f); 
+    private static readonly Color NeutralColor = new Color(1f, 1f, 1f, 0.3f);    
+    private static readonly Color MeAvatarColor = new Color(0.49f, 0.23f, 0.93f, 1f);  
     private static readonly Color OtherAvatarColor = new Color(0.65f, 0.55f, 0.98f, 0.3f);
 
-    // ─────────────────────────────────────────────
+  
     // Public Setup — called by LeaderboardManager
-    // ─────────────────────────────────────────────
     public void Setup(int rank, PlayerData data, bool isMe)
     {
         SetRank(rank);
@@ -62,9 +52,8 @@ public class LeaderboardRow : MonoBehaviour
         SetRowStyle(isMe);
     }
 
-    // ─────────────────────────────────────────────
+ 
     // Private Helpers
-    // ─────────────────────────────────────────────
 
     private void SetRank(int rank)
     {
@@ -80,7 +69,7 @@ public class LeaderboardRow : MonoBehaviour
             _ => NormalColor
         };
 
-        // Slightly larger font for top 3
+        //  larger font for top 3
         rankText.fontSize = rank <= 3 ? 52 : 40;
     }
 
