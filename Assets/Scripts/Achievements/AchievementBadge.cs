@@ -3,39 +3,28 @@ using UnityEngine.UI;
 using Image = UnityEngine.UI.Image;
 using TMPro;
 
-/// <summary>
-/// Attach this to each badge card GameObject in the Achievements scene.
-/// AchievementManager calls Setup() and SetUnlocked() on each one.
-/// </summary>
+
 public class AchievementBadge : MonoBehaviour
 {
-    // ─────────────────────────────────────────────
-    // Inspector References
-    // Drag the child objects of each badge card into these fields
-    // ─────────────────────────────────────────────
-
+   
     [Header("Badge Identity")]
     [Tooltip("Must exactly match the badge ID used in Firestore e.g. 'first_win'")]
     [SerializeField] public string badgeId;
 
     [Header("Visuals")]
-    [SerializeField] private Image badgeIcon;         // the badge image/sprite
-    [SerializeField] private GameObject checkmarkObject; // the tick GameObject
-    [SerializeField] private TMP_Text badgeNameText;   // the label below the icon
+    [SerializeField] private Image badgeIcon;         
+    [SerializeField] private GameObject checkmarkObject; 
+    [SerializeField] private TMP_Text badgeNameText;  
 
     [Header("Locked State")]
-    [SerializeField] private Sprite unlockedSprite;  // normal coloured sprite
-    [SerializeField] private Sprite lockedSprite;    // greyscale/lock sprite
+    [SerializeField] private Sprite unlockedSprite;  
+    [SerializeField] private Sprite lockedSprite;   
     [SerializeField] private Color lockedColor = new Color(0.6f, 0.6f, 0.6f, 1f);
     [SerializeField] private Color unlockedColor = Color.white;
 
-    // ─────────────────────────────────────────────
+    
     // Public Methods
-    // ─────────────────────────────────────────────
-
-    /// <summary>
-    /// Called by AchievementManager on Start to set the display name.
-    /// </summary>
+    
     public void Setup(string displayName)
     {
         if (badgeNameText != null)
@@ -45,10 +34,7 @@ public class AchievementBadge : MonoBehaviour
         SetUnlocked(false);
     }
 
-    /// <summary>
-    /// Called by AchievementManager after reading Firestore.
-    /// Pass true if the player has earned this badge, false if not.
-    /// </summary>
+
     public void SetUnlocked(bool unlocked)
     {
         // Swap sprite
