@@ -20,7 +20,7 @@ public class QuizQuestion
     public string topic;
 
     [Header("Adaptive Learning")]
-    public string difficulty; // "easy" | "medium" | "hard"  
+    public string difficulty; // "easy" , "medium" , "hard"  
 
     public bool IsCorrect(string playerAnswer)
     {
