@@ -81,9 +81,9 @@ public class AchievementsSceneUI : MonoBehaviour
         badge.SetUnlocked(mgr.IsBadgeUnlocked(badgeId));
     }
 
-    // ─────────────────────────────────────────────
+    
     // Load total points directly from Firestore
-    // ─────────────────────────────────────────────
+  
     async System.Threading.Tasks.Task LoadTotalPoints()
     {
         if (totalPointsText == null) return;
