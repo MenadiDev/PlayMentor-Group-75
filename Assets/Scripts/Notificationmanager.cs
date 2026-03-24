@@ -88,7 +88,7 @@ public class NotificationManager : MonoBehaviour
 
                     if (!isRead) unread++;
 
-                    // Spawn row
+            
                     var row = Instantiate(notifRowPrefab, notifContent);
 
                    
