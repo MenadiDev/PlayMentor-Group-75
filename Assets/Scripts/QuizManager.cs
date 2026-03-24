@@ -99,9 +99,8 @@ public class QuizManager : MonoBehaviour
     private int totalXP = 0;
     private List<Button> eliminatedButtons = new List<Button>();
 
-    // ─────────────────────────────────────────────
+   
     // Start
-    // ─────────────────────────────────────────────
     void Start()
     {
         if (QuizDataManager.Instance != null)
@@ -135,9 +134,8 @@ public class QuizManager : MonoBehaviour
         if (gameOverPanel != null) gameOverPanel.SetActive(false);
     }
 
-    // ─────────────────────────────────────────────
+    
     // Setup
-    // ─────────────────────────────────────────────
     void SetupQuiz()
     {
         currentQuestionIndex = 0;
@@ -154,9 +152,8 @@ public class QuizManager : MonoBehaviour
         DisplayQuestion();
     }
 
-    // ─────────────────────────────────────────────
+    
     // Display Question
-    // ─────────────────────────────────────────────
     void DisplayQuestion()
     {
         if (currentQuestionIndex >= quizQuestions.Count)
@@ -194,9 +191,8 @@ public class QuizManager : MonoBehaviour
         if (skipButton != null) skipButton.interactable = true;
     }
 
-    // ─────────────────────────────────────────────
+    
     // Answer Selected
-    // ─────────────────────────────────────────────
     void OnAnswerSelected(string answer, Button selectedButton)
     {
         if (hasAnswered) return;
@@ -239,9 +235,8 @@ public class QuizManager : MonoBehaviour
         SetButtonsInteractable(false);
     }
 
-    // ─────────────────────────────────────────────
+    
     // Hint
-    // ─────────────────────────────────────────────
     void OnHintClicked()
     {
         if (hasAnswered || hintUsedThisQuestion || hintsRemaining <= 0) return;
@@ -271,9 +266,8 @@ public class QuizManager : MonoBehaviour
         if (hintButton != null) hintButton.interactable = false;
     }
 
-    // ─────────────────────────────────────────────
+    
     // Skip
-    // ─────────────────────────────────────────────
     void OnSkipClicked()
     {
         if (hasAnswered) return;
@@ -291,9 +285,8 @@ public class QuizManager : MonoBehaviour
         ShowFeedbackPanel(false, 0, quizQuestions[currentQuestionIndex].correctAnswer, skipped: true);
     }
 
-    // ─────────────────────────────────────────────
+   
     // Feedback Panel
-    // ─────────────────────────────────────────────
     void ShowFeedbackPanel(bool isCorrect, int xpEarned, string correctAnswerLetter, bool skipped = false)
     {
         if (feedbackPanel == null) return;
@@ -370,9 +363,8 @@ public class QuizManager : MonoBehaviour
         DisplayQuestion();
     }
 
-    // ─────────────────────────────────────────────
+ 
     // Lives
-    // ─────────────────────────────────────────────
     void LoseLife()
     {
         currentLives = Mathf.Max(0, currentLives - 1);
@@ -398,9 +390,8 @@ public class QuizManager : MonoBehaviour
             img.color = alive ? Color.white : new Color(1f, 1f, 1f, 0.2f);
     }
 
-    // ─────────────────────────────────────────────
+   
     // Game Over
-    // ─────────────────────────────────────────────
     void ShowGameOver()
     {
         AudioManager.Instance?.PlayGameOver();
@@ -419,9 +410,8 @@ public class QuizManager : MonoBehaviour
         }
     }
 
-    // ─────────────────────────────────────────────
+  
     // Hint / XP UI
-    // ─────────────────────────────────────────────
     void UpdateHintUI()
     {
         if (hintCountText != null)
@@ -436,9 +426,8 @@ public class QuizManager : MonoBehaviour
             headerXPText.text = totalXP.ToString();
     }
 
-    // ─────────────────────────────────────────────
+    
     // Button Style Helpers
-    // ─────────────────────────────────────────────
     void SetButtonCorrect(Button btn)
     {
         Image img = btn.GetComponent<Image>();
@@ -509,9 +498,8 @@ public class QuizManager : MonoBehaviour
         if (skipButton != null) skipButton.interactable = on;
     }
 
-    // ─────────────────────────────────────────────
+
     // Reference Helpers
-    // ─────────────────────────────────────────────
     Image GetBadge(Button btn)
     {
         if (btn == answerButtonA) return badgeA;
@@ -563,9 +551,8 @@ public class QuizManager : MonoBehaviour
         return t[Random.Range(0, t.Length)];
     }
 
-    // ─────────────────────────────────────────────
+    
     // End Quiz
-    // ─────────────────────────────────────────────
     async void EndQuiz()
     {
         if (progressBar != null) progressBar.value = 1f;
@@ -640,9 +627,8 @@ public class QuizManager : MonoBehaviour
         if (saved) Debug.Log($"Quiz result saved! Topic: {currentTopic}, Points: {totalPoints}");
     }
 
-    // ─────────────────────────────────────────────
+    
     // Public button callbacks
-    // ─────────────────────────────────────────────
     public void RetryQuiz()
     {
         AudioManager.Instance?.PlayButtonClick();
