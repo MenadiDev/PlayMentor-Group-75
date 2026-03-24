@@ -5,25 +5,20 @@ using Firebase.Firestore;
 using UnityEngine;
 using Debug = UnityEngine.Debug;
 
-/// <summary>
-/// Persistent singleton — lives on a DontDestroyOnLoad GameObject.
-/// Only handles unlock logic and Firestore reads/writes.
-/// Has NO scene-specific Inspector fields — zero stale reference risk.
-/// Place on a standalone "AchievementManager" GameObject in your first scene (MainMenu/Login).
-/// </summary>
+
 public class AchievementManager : MonoBehaviour
 {
     public static AchievementManager Instance { get; private set; }
 
-    // ── Internal state ────────────────────────────
+   
     private FirebaseFirestore db;
     private string currentUserId;
     private bool isInitialized = false;
 
-    // Cached unlocked badge ids — populated on first load, updated on unlock
+    
     private HashSet<string> unlockedIds = new HashSet<string>();
 
-    // ── Badge definitions (data only — no scene refs) ─
+    
     public class BadgeInfo
     {
         public string badgeId;
@@ -40,7 +35,7 @@ public class AchievementManager : MonoBehaviour
         new BadgeInfo { badgeId = "mystery_badge", displayName = "Mystery Badge" },
     };
 
-    // ─────────────────────────────────────────────
+    
     void Awake()
     {
         if (Instance == null)
@@ -59,9 +54,9 @@ public class AchievementManager : MonoBehaviour
         await InitializeAsync();
     }
 
-    // ─────────────────────────────────────────────
+   
     // Initialise Firebase + load cached unlock state
-    // ─────────────────────────────────────────────
+    
     public async Task InitializeAsync()
     {
         if (isInitialized) return;
@@ -82,9 +77,9 @@ public class AchievementManager : MonoBehaviour
         Debug.Log($"AchievementManager ready — {unlockedIds.Count} badges unlocked.");
     }
 
-    // ─────────────────────────────────────────────
+  
     // Pull latest unlock state from Firestore into cache
-    // ─────────────────────────────────────────────
+  
     public async Task RefreshCacheFromFirestore()
     {
         if (string.IsNullOrEmpty(currentUserId)) return;
@@ -110,14 +105,14 @@ public class AchievementManager : MonoBehaviour
         }
     }
 
-    // ─────────────────────────────────────────────
+  
     // Public query — used by AchievementsSceneUI
-    // ─────────────────────────────────────────────
+    
     public bool IsBadgeUnlocked(string badgeId) => unlockedIds.Contains(badgeId);
 
-    // ─────────────────────────────────────────────
+    
     // Check & unlock after a quiz
-    // ─────────────────────────────────────────────
+    
     public async Task CheckAndUnlockAchievements(QuizResult result)
     {
         if (!isInitialized) await InitializeAsync();
@@ -137,18 +132,18 @@ public class AchievementManager : MonoBehaviour
             await TryUnlock("mystery_badge");                                           // full marks
     }
 
-    // ─────────────────────────────────────────────
-    // Public manual unlock (e.g. for week_star from streak logic)
-    // ─────────────────────────────────────────────
+    
+    // Public manual unlock 
+   
     public async void UnlockBadge(string badgeId)
     {
         if (!isInitialized) await InitializeAsync();
         await TryUnlock(badgeId);
     }
 
-    // ─────────────────────────────────────────────
+   
     // Internal unlock
-    // ─────────────────────────────────────────────
+    
     private async Task TryUnlock(string badgeId)
     {
         if (unlockedIds.Contains(badgeId)) return;
