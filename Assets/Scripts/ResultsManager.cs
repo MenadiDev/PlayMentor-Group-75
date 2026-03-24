@@ -190,8 +190,8 @@ public class ResultsManager : MonoBehaviour
             elapsed += Time.deltaTime;
             float t = elapsed / progressAnimationDuration;
 
-            // Smooth easing
-            t = t * t * (3f - 2f * t); // Smoothstep
+           
+            t = t * t * (3f - 2f * t); 
 
             progressFill.fillAmount = Mathf.Lerp(startFill, targetFill, t);
             yield return null;
