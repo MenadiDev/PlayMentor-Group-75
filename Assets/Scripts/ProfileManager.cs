@@ -9,35 +9,30 @@ using Image = UnityEngine.UI.Image;
 
 public class ProfileManager : MonoBehaviour
 {
-    // ── Avatar ───────────────────────────────────────
+    
     [Header("Avatar")]
     [SerializeField] private TMP_Text avatarInitialText;
     [SerializeField] private Image avatarCircleImage;
 
-    // ── Name Block ───────────────────────────────────
     [Header("Name Block")]
     [SerializeField] private TMP_Text usernameText;
     [SerializeField] private TMP_Text emailText;
     [SerializeField] private TMP_Text levelXPText;
 
-    // ── Stat Cards ───────────────────────────────────
     [Header("Stat Cards")]
     [SerializeField] private TMP_Text levelValueText;
     [SerializeField] private TMP_Text badgesValueText;
     [SerializeField] private TMP_Text streakValueText;
 
-    // ── Quiz Stats Grid ───────────────────────────────
     [Header("Quiz Stats")]
     [SerializeField] private TMP_Text totalQuizzesText;
     [SerializeField] private TMP_Text avgScoreText;
     [SerializeField] private TMP_Text totalCorrectText;
     [SerializeField] private TMP_Text perfectQuizzesText;
 
-    // ── Navigation ───────────────────────────────────
     [Header("Navigation")]
     [SerializeField] private Button backButton;
 
-    // ── Loading ───────────────────────────────────────
     [Header("Loading")]
     [SerializeField] private GameObject loadingOverlay;
 
@@ -62,7 +57,7 @@ public class ProfileManager : MonoBehaviour
             return;
         }
 
-        // Email comes straight from Firebase Auth — no Firestore read needed
+        // Email comes straight from Firebase Auth 
         if (emailText != null)
             emailText.text = user.Email ?? "";
 
@@ -71,9 +66,8 @@ public class ProfileManager : MonoBehaviour
         LoadProfileData(user.UserId);
     }
 
-    // ─────────────────────────────────────────────────
+    
     // Step 1 — users/{uid} document
-    // ─────────────────────────────────────────────────
     void LoadProfileData(string uid)
     {
         FirebaseFirestore.DefaultInstance
@@ -121,10 +115,8 @@ public class ProfileManager : MonoBehaviour
             });
     }
 
-    // ─────────────────────────────────────────────────
-    // Step 2 — quiz_results root collection (matches FirebaseManager.SaveQuizResult)
+    // quiz_results root collection 
     // Filtered by UserId field since results are stored at root, not subcollection
-    // ─────────────────────────────────────────────────
     void LoadQuizStats(string uid)
     {
         FirebaseFirestore.DefaultInstance
