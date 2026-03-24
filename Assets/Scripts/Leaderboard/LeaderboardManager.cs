@@ -10,9 +10,8 @@ using Image = UnityEngine.UI.Image;
 
 public class LeaderboardManager : MonoBehaviour
 {
-    // ─────────────────────────────────────────────
+    
     // Inspector References
-    // ─────────────────────────────────────────────
 
     [Header("Row Spawning")]
     [SerializeField] private GameObject rowPrefab;
@@ -45,9 +44,8 @@ public class LeaderboardManager : MonoBehaviour
     [Header("Loading")]
     [SerializeField] private GameObject loadingSpinner;
 
-    // ─────────────────────────────────────────────
+    
     // Private State
-    // ─────────────────────────────────────────────
     private FirebaseFirestore db;
     private string currentUserId;
     private string activeFilter = "weekly";
@@ -55,9 +53,9 @@ public class LeaderboardManager : MonoBehaviour
     private static readonly Color ActiveTabColor = new Color(0.49f, 0.23f, 0.93f, 1f);
     private static readonly Color InactiveTabColor = new Color(0.16f, 0.19f, 0.29f, 1f);
 
-    // ─────────────────────────────────────────────
+    
     // Unity Lifecycle
-    // ─────────────────────────────────────────────
+   
     async void Start()
     {
         db = FirebaseFirestore.DefaultInstance;
@@ -72,9 +70,9 @@ public class LeaderboardManager : MonoBehaviour
         if (loadingSpinner != null) loadingSpinner.SetActive(false);
     }
 
-    // ─────────────────────────────────────────────
+    
     // Filter Button Callbacks
-    // ─────────────────────────────────────────────
+    
     public async void OnWeeklyClicked()
     {
         if (activeFilter == "weekly") return;
@@ -98,10 +96,9 @@ public class LeaderboardManager : MonoBehaviour
         UpdateFilterButtonVisuals();
         await LoadLeaderboard("alltime");
     }
-
-    // ─────────────────────────────────────────────
+    
     // Core Data Loading
-    // ─────────────────────────────────────────────
+
     private async Task LoadLeaderboard(string filter)
     {
         // Clear existing rows
@@ -123,7 +120,7 @@ public class LeaderboardManager : MonoBehaviour
 
         QuerySnapshot snapshot = await query.GetSnapshotAsync();
 
-        // Remove this log once leaderboard is confirmed working
+        
         Debug.Log($"Leaderboard query returned {snapshot.Count} documents");
 
         List<PlayerData> players = new List<PlayerData>();
@@ -135,8 +132,8 @@ public class LeaderboardManager : MonoBehaviour
                 PlayerData p = new PlayerData
                 {
                     userId = doc.Id,
-                    name = doc.GetValue<string>("Username"),        // ← capital U
-                    points = (int)doc.GetValue<long>("TotalPoints"),  // ← capital T
+                    name = doc.GetValue<string>("Username"),        
+                    points = (int)doc.GetValue<long>("TotalPoints"),  
                     rankChange = 0
                 };
                 players.Add(p);
@@ -151,9 +148,9 @@ public class LeaderboardManager : MonoBehaviour
         PopulateScrollList(players);
     }
 
-    // ─────────────────────────────────────────────
+    
     // Populate Top 3 Podium
-    // ─────────────────────────────────────────────
+   
     private void PopulatePodium(List<PlayerData> players)
     {
         if (players.Count < 3)
@@ -180,9 +177,9 @@ public class LeaderboardManager : MonoBehaviour
         avatarText.text = GetInitials(player.name);
     }
 
-    // ─────────────────────────────────────────────
+   
     // Populate Scroll List (Ranks 1–10)
-    // ─────────────────────────────────────────────
+   
     private void PopulateScrollList(List<PlayerData> players)
     {
         for (int i = 0; i < players.Count; i++)
@@ -202,9 +199,9 @@ public class LeaderboardManager : MonoBehaviour
         }
     }
 
-    // ─────────────────────────────────────────────
+    
     // Filter Button Visuals
-    // ─────────────────────────────────────────────
+   
     private void UpdateFilterButtonVisuals()
     {
         if (weeklyButtonBg != null) weeklyButtonBg.color = InactiveTabColor;
@@ -221,9 +218,8 @@ public class LeaderboardManager : MonoBehaviour
         if (activeButton != null) activeButton.color = ActiveTabColor;
     }
 
-    // ─────────────────────────────────────────────
+  
     // Helper
-    // ─────────────────────────────────────────────
     private string GetInitials(string fullName)
     {
         if (string.IsNullOrEmpty(fullName)) return "??";
@@ -234,9 +230,9 @@ public class LeaderboardManager : MonoBehaviour
     }
 }
 
-// ─────────────────────────────────────────────
+
 // Shared Data Model
-// ─────────────────────────────────────────────
+
 [System.Serializable]
 public class PlayerData
 {
