@@ -12,25 +12,21 @@ using Image = UnityEngine.UI.Image;
 
 public class DashboardManager : MonoBehaviour
 {
-    // ─────────────────────────────────────────────
+   
     // User Info
-    // ─────────────────────────────────────────────
     [Header("User Info")]
     [SerializeField] private TextMeshProUGUI userNameText;
     [SerializeField] private TextMeshProUGUI userLevelText;
     [SerializeField] private TextMeshProUGUI greetingText;
 
-    // ─────────────────────────────────────────────
     // Stats Cards
-    // ─────────────────────────────────────────────
     [Header("Stats Cards")]
     [SerializeField] private TextMeshProUGUI levelValueText;
     [SerializeField] private TextMeshProUGUI streakValueText;
     [SerializeField] private TextMeshProUGUI badgesValueText;
 
-    // ─────────────────────────────────────────────
+   
     // Topic Progress
-    // ─────────────────────────────────────────────
     [Header("Topic Progress Labels")]
     [SerializeField] private TextMeshProUGUI humanBodyPercent;
     [SerializeField] private TextMeshProUGUI cellBiologyPercent;
@@ -43,16 +39,14 @@ public class DashboardManager : MonoBehaviour
     [SerializeField] private RectTransform cellBiologyFill;
     [SerializeField] private RectTransform cellBiologyTrack;
 
-    // ─────────────────────────────────────────────
+    
     // Quote Card
-    // ─────────────────────────────────────────────
     [Header("Quote Card")]
     [SerializeField] private TextMeshProUGUI quoteText;
     [SerializeField] private TextMeshProUGUI quoteAuthorText;
 
-    // ─────────────────────────────────────────────
+
     // Daily Challenge
-    // ─────────────────────────────────────────────
     [Header("Daily Challenge")]
     [SerializeField] private TextMeshProUGUI challengeTitleText;
     [SerializeField] private TextMeshProUGUI challengeSubText;
@@ -61,9 +55,8 @@ public class DashboardManager : MonoBehaviour
     [SerializeField] private RectTransform challengeProgressFill;
     [SerializeField] private RectTransform challengeProgressTrack;
 
-    // ─────────────────────────────────────────────
+  
     // Bottom Nav
-    // ─────────────────────────────────────────────
     [Header("Bottom Nav — Buttons")]
     [SerializeField] private Button navHome;
     [SerializeField] private Button navTopics;
@@ -89,27 +82,19 @@ public class DashboardManager : MonoBehaviour
     [SerializeField] private Color navActiveColor = new Color(0.42f, 0.31f, 0.89f);
     [SerializeField] private Color navInactiveColor = new Color(0.73f, 0.73f, 0.73f);
 
-    // ─────────────────────────────────────────────
+ 
     // Scene Names
-    // ─────────────────────────────────────────────
     [Header("Scene Names")]
     [SerializeField] private string topicSelectionScene = "TopicSelectionScene";
     [SerializeField] private string leaderboardScene = "LeaderboardScene";
     [SerializeField] private string achievementsScene = "AchievementsScene";
     [SerializeField] private string profileScene = "ProfileScene";
 
-    // ─────────────────────────────────────────────
     // Loading
-    // ─────────────────────────────────────────────
     [Header("Loading")]
     [SerializeField] private GameObject loadingPanel;
 
-    // ─────────────────────────────────────────────
-    // Challenge definitions — rotates by day of year
-    // Type 0 = complete 3 quizzes
-    // Type 1 = score 80%+ on any quiz
-    // Type 2 = maintain streak (play 1 quiz)
-    // ─────────────────────────────────────────────
+ 
     private struct ChallengeDefinition
     {
         public int type;
@@ -126,9 +111,8 @@ public class DashboardManager : MonoBehaviour
         new ChallengeDefinition { type=2, title="Keep your streak alive!",      sub="Play at least 1 quiz", goal=1, xp=20  },
     };
 
-    // ─────────────────────────────────────────────
+
     // Quotes pool
-    // ─────────────────────────────────────────────
     private string[][] quotes = new string[][]
     {
         new string[]{ "The beautiful thing about learning is nobody can take it away from you.", "B.B. King" },
@@ -140,17 +124,15 @@ public class DashboardManager : MonoBehaviour
         new string[]{ "Tell me and I forget. Teach me and I remember. Involve me and I learn.", "Benjamin Franklin" },
     };
 
-    // ─────────────────────────────────────────────
+
     // Private state
-    // ─────────────────────────────────────────────
     private ChallengeDefinition todayChallenge;
     private int challengeProgress = 0;
     private bool challengeComplete = false;
-    private string todayDateKey;   // "yyyy-MM-dd" used as Firestore doc id
+    private string todayDateKey;   
 
-    // ─────────────────────────────────────────────
+
     // Start
-    // ─────────────────────────────────────────────
     void Start()
     {
         if (FirebaseManager.Instance == null || FirebaseManager.Instance.CurrentUser == null)
@@ -168,15 +150,14 @@ public class DashboardManager : MonoBehaviour
         SetNavListeners();
         SetNavActive(0);
 
-        // Show challenge shell immediately so UI doesn't look empty
+    
         RenderChallengeShell();
 
         LoadDashboardData();
     }
 
-    // ─────────────────────────────────────────────
+  
     // Greeting
-    // ─────────────────────────────────────────────
     void SetGreeting()
     {
         if (greetingText == null) return;
@@ -184,9 +165,9 @@ public class DashboardManager : MonoBehaviour
         greetingText.text = hour < 12 ? "Good morning" : hour < 17 ? "Good afternoon" : "Good evening";
     }
 
-    // ─────────────────────────────────────────────
+
     // Quote
-    // ─────────────────────────────────────────────
+  
     void SetQuote()
     {
         int idx = DateTime.Now.DayOfYear % quotes.Length;
@@ -194,9 +175,8 @@ public class DashboardManager : MonoBehaviour
         if (quoteAuthorText != null) quoteAuthorText.text = $"— {quotes[idx][1]}";
     }
 
-    // ─────────────────────────────────────────────
+
     // Load dashboard data
-    // ─────────────────────────────────────────────
     void LoadDashboardData()
     {
         if (loadingPanel != null) loadingPanel.SetActive(true);
@@ -223,9 +203,8 @@ public class DashboardManager : MonoBehaviour
         if (loadingPanel != null) loadingPanel.SetActive(false);
     }
 
-    // ─────────────────────────────────────────────
+ 
     // Update UI
-    // ─────────────────────────────────────────────
     void UpdateUI(UserProfile profile)
     {
         if (userNameText != null) userNameText.text = $"Welcome, {profile.Username}!";
@@ -236,9 +215,8 @@ public class DashboardManager : MonoBehaviour
         StartCoroutine(AnimateCountUp(badgesValueText, 0, profile.TotalBadges, 1f));
     }
 
-    // ─────────────────────────────────────────────
+
     // Topic Progress
-    // ─────────────────────────────────────────────
     void LoadTopicProgress()
     {
         string userId = FirebaseManager.Instance.CurrentUser.UserId;
@@ -283,14 +261,7 @@ public class DashboardManager : MonoBehaviour
             });
     }
 
-    // ─────────────────────────────────────────────
-    // Daily Challenge — Load from Firestore
-    //
-    // Firestore path:
-    //   users/{uid}/dailyChallenges/{yyyy-MM-dd}
-    //   Fields: challengeType (int), progress (int),
-    //           completed (bool), date (string)
-    // ─────────────────────────────────────────────
+    
     void LoadChallengeProgress()
     {
         string uid = FirebaseManager.Instance.CurrentUser.UserId;
@@ -426,9 +397,8 @@ public class DashboardManager : MonoBehaviour
         (2, 1),  // play 1 quiz (streak)
     };
 
-    // ─────────────────────────────────────────────
+  
     // Render challenge UI
-    // ─────────────────────────────────────────────
     void RenderChallengeShell()
     {
         if (challengeTitleText != null) challengeTitleText.text = todayChallenge.title;
@@ -462,9 +432,8 @@ public class DashboardManager : MonoBehaviour
         }
     }
 
-    // ─────────────────────────────────────────────
+ 
     // Progress bar fill helper
-    // ─────────────────────────────────────────────
     void SetProgressBar(RectTransform fill, RectTransform track, float pct)
     {
         if (fill == null || track == null) return;
@@ -478,9 +447,8 @@ public class DashboardManager : MonoBehaviour
         fill.sizeDelta = new Vector2(width, fill.sizeDelta.y);
     }
 
-    // ─────────────────────────────────────────────
+  
     // Animate count-up
-    // ─────────────────────────────────────────────
     IEnumerator AnimateCountUp(TextMeshProUGUI text, int from, int to, float duration)
     {
         if (text == null) yield break;
@@ -494,9 +462,8 @@ public class DashboardManager : MonoBehaviour
         text.text = to.ToString();
     }
 
-    // ─────────────────────────────────────────────
+  
     // Fallback
-    // ─────────────────────────────────────────────
     void ShowDefaultData()
     {
         if (userNameText != null) userNameText.text = "Welcome, Student!";
@@ -508,9 +475,8 @@ public class DashboardManager : MonoBehaviour
         RenderChallengeUI(0, false);
     }
 
-    // ─────────────────────────────────────────────
+   
     // Bottom Nav
-    // ─────────────────────────────────────────────
     void SetNavListeners()
     {
         if (navHome != null) navHome.onClick.AddListener(OnNavHome);
