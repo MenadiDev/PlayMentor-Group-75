@@ -3,10 +3,7 @@ using UnityEngine.UI;
 using TMPro;
 using System.Collections;
 
-/// <summary>
-/// Optional animation script for podium slots.
-/// Animates the platform rising up when the leaderboard loads.
-/// </summary>
+
 public class PodiumSlot : MonoBehaviour
 {
     [Header("References")]
@@ -14,18 +11,18 @@ public class PodiumSlot : MonoBehaviour
     [SerializeField] private TMP_Text nameText;
     [SerializeField] private TMP_Text pointsText;
     [SerializeField] private TMP_Text avatarText;
-    [SerializeField] private CanvasGroup slotCanvasGroup; // add CanvasGroup component to the slot
+    [SerializeField] private CanvasGroup slotCanvasGroup; 
 
     [Header("Animation")]
-    [SerializeField] private float animationDelay = 0f;   // 0 for 1st, 0.1 for 2nd, 0.2 for 3rd
+    [SerializeField] private float animationDelay = 0f;   
     [SerializeField] private float animationDuration = 0.6f;
-    [SerializeField] private float startYOffset = -200f; // how far below it starts
+    [SerializeField] private float startYOffset = -200f; 
 
     private Vector2 targetPosition;
 
     void Awake()
     {
-        // Hide slot initially — will fade in during animation
+        
         if (slotCanvasGroup != null)
             slotCanvasGroup.alpha = 0f;
     }
@@ -53,7 +50,7 @@ public class PodiumSlot : MonoBehaviour
             elapsed += Time.deltaTime;
             float t = elapsed / animationDuration;
 
-            // Ease out cubic — starts fast, slows at end
+            // Ease out cubic â€” starts fast, slows at end
             float eased = 1f - Mathf.Pow(1f - t, 3f);
 
             // Move platform upward
