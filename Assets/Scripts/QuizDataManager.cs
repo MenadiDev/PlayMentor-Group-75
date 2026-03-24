@@ -18,9 +18,8 @@ public class QuizDataManager : MonoBehaviour
     private List<QuizQuestion> currentQuizQuestions = new List<QuizQuestion>();
     private bool isLoading = false;
 
-    // ─────────────────────────────────────────────
+  
     // Singleton
-    // ─────────────────────────────────────────────
     void Awake()
     {
         if (Instance == null)
@@ -34,10 +33,10 @@ public class QuizDataManager : MonoBehaviour
         }
     }
 
-    // ─────────────────────────────────────────────
+   
     // Load questions — adaptive for logged-in users,
     // random pick for guests (no difficulty filter)
-    // ─────────────────────────────────────────────
+    
     public async Task<bool> LoadQuestionsForTopic(string topicId)
     {
         if (isLoading)
@@ -58,14 +57,14 @@ public class QuizDataManager : MonoBehaviour
             return false;
         }
 
-        // ── GUESTS: skip adaptive, load all questions and pick randomly ──
+        //  GUESTS: skip adaptive, load all questions and pick randomly 
         if (SessionManager.IsGuest)
         {
             Debug.Log($"QuizDataManager: guest — loading all questions for '{topicId}'");
             return await LoadQuestionsRandom(topicId);
         }
 
-        // ── LOGGED-IN: use adaptive difficulty ──────────────────────────
+        // LOGGED-IN: use adaptive difficulty 
         if (AdaptiveLearningEngine.Instance != null)
             await AdaptiveLearningEngine.Instance.LoadStateForTopic(topicId);
 
@@ -78,10 +77,9 @@ public class QuizDataManager : MonoBehaviour
         return await LoadQuestionsAdaptive(topicId, difficulty);
     }
 
-    // ─────────────────────────────────────────────
+    
     // Adaptive load — tries target difficulty first,
     // fills remaining slots from adjacent difficulties
-    // ─────────────────────────────────────────────
     private async Task<bool> LoadQuestionsAdaptive(string topicId, string difficulty)
     {
         try
@@ -132,9 +130,8 @@ public class QuizDataManager : MonoBehaviour
         }
     }
 
-    // ─────────────────────────────────────────────
-    // Random load for guests — same as original behaviour
-    // ─────────────────────────────────────────────
+   
+    // Random load for guests 
     private async Task<bool> LoadQuestionsRandom(string topicId)
     {
         try
@@ -173,9 +170,9 @@ public class QuizDataManager : MonoBehaviour
         }
     }
 
-    // ─────────────────────────────────────────────
+    
     // Fetch all questions for a topic + difficulty
-    // ─────────────────────────────────────────────
+   
     private async Task<List<QuizQuestion>> FetchByDifficulty(string topicId, string difficulty)
     {
         var result = new List<QuizQuestion>();
@@ -194,9 +191,9 @@ public class QuizDataManager : MonoBehaviour
         return result;
     }
 
-    // ─────────────────────────────────────────────
+  
     // Parse a Firestore document into QuizQuestion
-    // ─────────────────────────────────────────────
+
     private QuizQuestion ParseDoc(DocumentSnapshot doc)
     {
         try
@@ -220,9 +217,9 @@ public class QuizDataManager : MonoBehaviour
         }
     }
 
-    // ─────────────────────────────────────────────
+   
     // Fill order for adjacent difficulties
-    // ─────────────────────────────────────────────
+   
     private List<string> GetFillOrder(string primary)
     {
         switch (primary)
@@ -233,9 +230,8 @@ public class QuizDataManager : MonoBehaviour
         }
     }
 
-    // ─────────────────────────────────────────────
+    
     // Called by QuizManager
-    // ─────────────────────────────────────────────
     public List<QuizQuestion> GetQuizQuestions()
     {
         if (currentQuizQuestions.Count == 0)
@@ -244,9 +240,8 @@ public class QuizDataManager : MonoBehaviour
         return currentQuizQuestions;
     }
 
-    // ─────────────────────────────────────────────
+    
     // Fisher-Yates shuffle
-    // ─────────────────────────────────────────────
     private void Shuffle<T>(List<T> list)
     {
         for (int i = list.Count - 1; i > 0; i--)
@@ -256,9 +251,8 @@ public class QuizDataManager : MonoBehaviour
         }
     }
 
-    // ─────────────────────────────────────────────
-    // Pick N random items without replacement (guest fallback)
-    // ─────────────────────────────────────────────
+   
+    // Pick N random items without replacement 
     private List<QuizQuestion> PickRandom(List<QuizQuestion> source, int count)
     {
         var pool = new List<QuizQuestion>(source);
