@@ -14,10 +14,10 @@ public class SettingsManager : MonoBehaviour
 
     void Start()
     {
-        // Hide popup on start
+        
         if (logoutPopup != null) logoutPopup.SetActive(false);
 
-        // Wire buttons
+        
         if (logoutButton != null) logoutButton.onClick.AddListener(ShowPopup);
         if (logoutCancelButton != null) logoutCancelButton.onClick.AddListener(HidePopup);
         if (logoutConfirmButton != null) logoutConfirmButton.onClick.AddListener(ConfirmLogout);
