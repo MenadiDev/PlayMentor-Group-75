@@ -22,7 +22,7 @@ public class MainMenuManager : MonoBehaviour
     public void OnRegister()
     {
         SessionManager.IsGuest = false;
-        SceneManager.LoadScene("RegisterScene");
+        SceneManager.LoadScene("LoginScene");
     }
 }
 

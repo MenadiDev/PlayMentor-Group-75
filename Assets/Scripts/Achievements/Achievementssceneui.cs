@@ -1,4 +1,4 @@
-﻿
+﻿using System.Threading.Tasks;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -6,8 +6,7 @@ using Debug = UnityEngine.Debug;
 
 public class AchievementsSceneUI : MonoBehaviour
 {
-    
-    [Header("Badge Cards (in order: FirstWin, QuickLearn, WeekStar, 100Score, Bookworm, Mystery)")]
+    [Header("Badge Cards (order: FirstWin, QuickLearn, WeekStar, 100Score, Bookworm, Mystery)")]
     [SerializeField] private AchievementBadge badgeFirstWin;
     [SerializeField] private AchievementBadge badgeQuickLearn;
     [SerializeField] private AchievementBadge badgeWeekStar;
@@ -15,36 +14,57 @@ public class AchievementsSceneUI : MonoBehaviour
     [SerializeField] private AchievementBadge badgeBookworm;
     [SerializeField] private AchievementBadge badgeMystery;
 
-    // ── Total Points card 
     [Header("Total Points")]
     [SerializeField] private TMP_Text totalPointsText;
 
-    // ── Loading spinner
     [Header("Loading")]
     [SerializeField] private GameObject loadingSpinner;
 
-    // ── Back button
     [Header("Navigation")]
-    [SerializeField] private UnityEngine.UI.Button backButton;
+    [SerializeField] private Button backButton;
 
     async void Start()
     {
         if (backButton != null)
             backButton.onClick.AddListener(GoBack);
 
-        // Show loading state while we wait for data
         SetLoading(true);
 
-        // Make sure AchievementManager is ready
+        // ── FIX: wait for AchievementManager AND for Firebase Auth to have a user
+        // This solves the blank-on-first-visit problem
+        float timeout = 5f;
+        float waited = 0f;
+
+        while (waited < timeout)
+        {
+            // Check AchievementManager exists and Firebase has a logged-in user
+            if (AchievementManager.Instance != null &&
+                Firebase.Auth.FirebaseAuth.DefaultInstance.CurrentUser != null)
+                break;
+
+            await Task.Delay(100);
+            waited += 0.1f;
+        }
+
         if (AchievementManager.Instance == null)
         {
-            Debug.LogError("AchievementsSceneUI: AchievementManager not found! " +
-                           "Make sure it exists in your first scene.");
+            Debug.LogError("AchievementsSceneUI: AchievementManager not found!");
             SetLoading(false);
             return;
         }
 
-        
+        if (Firebase.Auth.FirebaseAuth.DefaultInstance.CurrentUser == null)
+        {
+            Debug.LogWarning("AchievementsSceneUI: no user logged in after waiting.");
+            SetLoading(false);
+            return;
+        }
+
+        // ── FIX: always re-initialise to pick up the current user
+        // This ensures the cache is loaded for the logged-in user on every visit
+        await AchievementManager.Instance.InitializeAsync();
+
+        // Fresh pull from Firestore so newly earned badges show immediately
         await AchievementManager.Instance.RefreshCacheFromFirestore();
 
         RenderBadges();
@@ -69,11 +89,10 @@ public class AchievementsSceneUI : MonoBehaviour
     {
         if (badge == null)
         {
-            Debug.LogWarning($"AchievementsSceneUI: badge slot for '{badgeId}' is not wired.");
+            Debug.LogWarning($"AchievementsSceneUI: badge slot '{badgeId}' not wired.");
             return;
         }
 
-        // Find display name from the static list
         var info = AchievementManager.AllBadges.Find(b => b.badgeId == badgeId);
         string displayName = info != null ? info.displayName : badgeId;
 
@@ -81,10 +100,7 @@ public class AchievementsSceneUI : MonoBehaviour
         badge.SetUnlocked(mgr.IsBadgeUnlocked(badgeId));
     }
 
-    
-    // Load total points directly from Firestore
-  
-    async System.Threading.Tasks.Task LoadTotalPoints()
+    async Task LoadTotalPoints()
     {
         if (totalPointsText == null) return;
 
@@ -97,10 +113,9 @@ public class AchievementsSceneUI : MonoBehaviour
                 .Collection("users").Document(user.UserId)
                 .GetSnapshotAsync();
 
-            if (doc.Exists && doc.TryGetValue("TotalPoints", out long pts))
-                totalPointsText.text = pts.ToString("N0");
-            else
-                totalPointsText.text = "0";
+            totalPointsText.text = doc.Exists && doc.TryGetValue("TotalPoints", out long pts)
+                ? pts.ToString("N0")
+                : "0";
         }
         catch (System.Exception ex)
         {
@@ -109,13 +124,11 @@ public class AchievementsSceneUI : MonoBehaviour
         }
     }
 
-
     void SetLoading(bool on)
     {
         if (loadingSpinner != null) loadingSpinner.SetActive(on);
     }
 
-  
     void GoBack()
     {
         AudioManager.Instance?.PlayButtonClick();

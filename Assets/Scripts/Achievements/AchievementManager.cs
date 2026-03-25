@@ -5,20 +5,16 @@ using Firebase.Firestore;
 using UnityEngine;
 using Debug = UnityEngine.Debug;
 
-
 public class AchievementManager : MonoBehaviour
 {
     public static AchievementManager Instance { get; private set; }
 
-   
     private FirebaseFirestore db;
     private string currentUserId;
     private bool isInitialized = false;
 
-    
     private HashSet<string> unlockedIds = new HashSet<string>();
 
-    
     public class BadgeInfo
     {
         public string badgeId;
@@ -35,7 +31,6 @@ public class AchievementManager : MonoBehaviour
         new BadgeInfo { badgeId = "mystery_badge", displayName = "Mystery Badge" },
     };
 
-    
     void Awake()
     {
         if (Instance == null)
@@ -54,19 +49,17 @@ public class AchievementManager : MonoBehaviour
         await InitializeAsync();
     }
 
-   
-    // Initialise Firebase + load cached unlock state
-    
     public async Task InitializeAsync()
     {
-        if (isInitialized) return;
-
         var user = FirebaseAuth.DefaultInstance.CurrentUser;
         if (user == null)
         {
             Debug.LogWarning("AchievementManager: no user logged in.");
             return;
         }
+
+        // ── FIX: if user changed (logout/login) re-initialise for new user
+        if (isInitialized && currentUserId == user.UserId) return;
 
         currentUserId = user.UserId;
         db = FirebaseFirestore.DefaultInstance;
@@ -77,9 +70,6 @@ public class AchievementManager : MonoBehaviour
         Debug.Log($"AchievementManager ready — {unlockedIds.Count} badges unlocked.");
     }
 
-  
-    // Pull latest unlock state from Firestore into cache
-  
     public async Task RefreshCacheFromFirestore()
     {
         if (string.IsNullOrEmpty(currentUserId)) return;
@@ -98,6 +88,8 @@ public class AchievementManager : MonoBehaviour
                 if (doc.TryGetValue("unlocked", out bool val)) unlocked = val;
                 if (unlocked) unlockedIds.Add(doc.Id);
             }
+
+            Debug.Log($"AchievementManager: cache refreshed — {unlockedIds.Count} unlocked.");
         }
         catch (System.Exception ex)
         {
@@ -105,45 +97,33 @@ public class AchievementManager : MonoBehaviour
         }
     }
 
-  
-    // Public query — used by AchievementsSceneUI
-    
     public bool IsBadgeUnlocked(string badgeId) => unlockedIds.Contains(badgeId);
 
-    
-    // Check & unlock after a quiz
-    
     public async Task CheckAndUnlockAchievements(QuizResult result)
     {
         if (!isInitialized) await InitializeAsync();
 
-        await TryUnlock("first_win");                                                   // complete any quiz
+        await TryUnlock("first_win");
 
         if (result.Percentage >= 100f)
-            await TryUnlock("100_score");                                               // perfect score
+            await TryUnlock("100_score");
 
         if (result.Percentage >= 80f)
-            await TryUnlock("quick_learn");                                             // score 80%+
+            await TryUnlock("quick_learn");
 
         if (result.CorrectAnswers >= 5)
-            await TryUnlock("bookworm");                                                // 5+ correct
+            await TryUnlock("bookworm");
 
         if (result.Percentage >= 100f && result.CorrectAnswers == result.TotalQuestions)
-            await TryUnlock("mystery_badge");                                           // full marks
+            await TryUnlock("mystery_badge");
     }
 
-    
-    // Public manual unlock 
-   
     public async void UnlockBadge(string badgeId)
     {
         if (!isInitialized) await InitializeAsync();
         await TryUnlock(badgeId);
     }
 
-   
-    // Internal unlock
-    
     private async Task TryUnlock(string badgeId)
     {
         if (unlockedIds.Contains(badgeId)) return;

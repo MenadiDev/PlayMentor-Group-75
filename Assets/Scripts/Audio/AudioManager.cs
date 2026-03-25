@@ -21,7 +21,7 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private AudioClip sfxWrong;
     [SerializeField] private AudioClip sfxQuizComplete;
     [SerializeField] private AudioClip sfxStreak;
-    [SerializeField] private AudioClip sfxGameOver;     // ← NEW: failure sting
+    [SerializeField] private AudioClip sfxGameOver;     
 
     [Header("Volume")]
     [Range(0f, 1f)][SerializeField] private float musicVolume = 0.4f;

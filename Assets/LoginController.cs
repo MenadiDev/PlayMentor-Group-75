@@ -10,9 +10,14 @@ public class LoginController : MonoBehaviour
     [SerializeField] private Button loginButton;
     [SerializeField] private Button registerButton;
 
-    [Header("Feedback (Optional)")]
+    [Header("Feedback Text (optional — shows below inputs)")]
     [SerializeField] private TextMeshProUGUI feedbackText;
     [SerializeField] private GameObject loadingIndicator;
+
+    [Header("Error Popup (optional — shows on wrong password)")]
+    [SerializeField] private GameObject errorPopup;
+    [SerializeField] private TMP_Text errorMessageText;
+    [SerializeField] private Button errorOKButton;
 
     void Start()
     {
@@ -31,6 +36,13 @@ public class LoginController : MonoBehaviour
         if (feedbackText != null) feedbackText.gameObject.SetActive(false);
         if (loadingIndicator != null) loadingIndicator.SetActive(false);
 
+        
+        if (errorOKButton != null)
+            errorOKButton.onClick.AddListener(HideErrorPopup);
+
+        
+        if (errorPopup != null) errorPopup.SetActive(false);
+
         StartCoroutine(WaitForFirebase());
     }
 
@@ -41,8 +53,6 @@ public class LoginController : MonoBehaviour
 
         UnityEngine.Debug.Log("Firebase ready");
 
-        // If the player was already logged in (session persisted by Firebase)
-        // skip the login screen and go straight to their dashboard
         if (FirebaseManager.Instance.CurrentUser != null)
         {
             UnityEngine.Debug.Log("Already signed in — skipping login screen");
@@ -50,7 +60,6 @@ public class LoginController : MonoBehaviour
             yield break;
         }
 
-        // Otherwise subscribe to auth state for when they log in manually
         FirebaseManager.Instance.OnAuthStateChanged += OnAuthStateChanged;
     }
 
@@ -74,11 +83,11 @@ public class LoginController : MonoBehaviour
         if (success)
         {
             ShowFeedback("Welcome back!", true);
-            // NavigateToDashboard is called via OnAuthStateChanged
         }
         else
         {
-            ShowFeedback("Login failed. Check your email and password.", false);
+            //Show error popup on wrong credentials
+            ShowErrorPopup("Wrong email or password.\nPlease try again.");
             SetButtonsInteractable(true);
         }
     }
@@ -105,11 +114,11 @@ public class LoginController : MonoBehaviour
         if (success)
         {
             ShowFeedback("Account created! Welcome!", true);
-            // NavigateToDashboard is called via OnAuthStateChanged
         }
         else
         {
-            ShowFeedback("Registration failed. Email may already be in use.", false);
+            // Show error popup on failed registration 
+            ShowErrorPopup("Registration failed.\nThis email may already be in use.");
             SetButtonsInteractable(true);
         }
     }
@@ -131,6 +140,30 @@ public class LoginController : MonoBehaviour
             UnityEngine.SceneManagement.SceneManager.LoadScene("DashboardScene");
     }
 
+    
+    // Error Popup
+    void ShowErrorPopup(string message)
+    {
+        if (errorPopup != null)
+        {
+            if (errorMessageText != null) errorMessageText.text = message;
+            errorPopup.SetActive(true);
+        }
+        else
+        {
+            // Fallback to inline feedback text 
+            ShowFeedback(message.Replace("\n", " "), false);
+        }
+    }
+
+    void HideErrorPopup()
+    {
+        if (errorPopup != null) errorPopup.SetActive(false);
+    }
+
+    
+    // Inline feedback
+    
     void ShowFeedback(string message, bool isSuccess)
     {
         if (feedbackText != null)
