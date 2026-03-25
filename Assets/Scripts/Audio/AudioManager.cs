@@ -21,7 +21,7 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private AudioClip sfxWrong;
     [SerializeField] private AudioClip sfxQuizComplete;
     [SerializeField] private AudioClip sfxStreak;
-    [SerializeField] private AudioClip sfxGameOver;     // ← NEW: failure sting
+    [SerializeField] private AudioClip sfxGameOver;     
 
     [Header("Volume")]
     [Range(0f, 1f)][SerializeField] private float musicVolume = 0.4f;
@@ -53,7 +53,7 @@ public class AudioManager : MonoBehaviour
         PlayMusic(bgmDashboard);
     }
 
-    // ─── Music ───────────────────────────────────────
+    // Music 
     public void PlayMusic(AudioClip clip)
     {
         if (clip == null) { StopMusic(); return; }
@@ -86,13 +86,13 @@ public class AudioManager : MonoBehaviour
     public void PauseMusic() { if (musicSource.isPlaying) musicSource.Pause(); }
     public void ResumeMusic() { if (!musicSource.isPlaying) musicSource.UnPause(); }
 
-    // ─── SFX ─────────────────────────────────────────
+    // SFX 
     public void PlayButtonClick() => PlaySFX(sfxButtonClick);
     public void PlayCorrect() => PlaySFX(sfxCorrect);
     public void PlayWrong() => PlaySFX(sfxWrong);
     public void PlayQuizComplete() => PlaySFX(sfxQuizComplete);
     public void PlayStreak() => PlaySFX(sfxStreak);
-    public void PlayGameOver() => PlaySFX(sfxGameOver);   // ← NEW
+    public void PlayGameOver() => PlaySFX(sfxGameOver);  
 
     public void PlaySFX(AudioClip clip)
     {
@@ -100,7 +100,7 @@ public class AudioManager : MonoBehaviour
         sfxSource.PlayOneShot(clip, sfxVolume);
     }
 
-    // ─── Volume / Settings ───────────────────────────
+    // Volume / Settings 
     public void SetMusicEnabled(bool enabled)
     {
         musicSource.volume = enabled ? musicVolume : 0f;
@@ -136,7 +136,7 @@ public class AudioManager : MonoBehaviour
         musicSource.volume = IsMusicEnabled() ? musicVolume : 0f;
     }
 
-    // ─── Coroutines ──────────────────────────────────
+    // Coroutines 
     IEnumerator CrossfadeTo(AudioClip newClip)
     {
         float elapsed = 0f;
