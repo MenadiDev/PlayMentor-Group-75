@@ -74,7 +74,6 @@ public class LoginController : MonoBehaviour
         if (success)
         {
             ShowFeedback("Welcome back!", true);
-            // NavigateToDashboard is called via OnAuthStateChanged
         }
         else
         {
