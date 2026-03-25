@@ -16,7 +16,7 @@ public class SceneAudioTrigger : MonoBehaviour
             case MusicTrack.Dashboard: AudioManager.Instance.PlayDashboardMusic(); break;
             case MusicTrack.Quiz: AudioManager.Instance.PlayQuizMusic(); break;
             case MusicTrack.Stop: AudioManager.Instance.StopMusic(); break;
-            case MusicTrack.None: break; // keep whatever is already playing
+            case MusicTrack.None: break; // keep whatever is playing
         }
     }
 }

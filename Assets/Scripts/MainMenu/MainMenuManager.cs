@@ -4,21 +4,21 @@ using UnityEngine.SceneManagement;
 public class MainMenuManager : MonoBehaviour
 {
 
-    // Drag this to BtnPlay OnClick()
+    // BtnPlay OnClick()
     public void OnPlayGuest()
     {
         SessionManager.IsGuest = true;
         SceneManager.LoadScene("TopicSelectionScene");
     }
 
-    // Drag this to BtnLogin OnClick()
+    // BtnLogin OnClick()
     public void OnLogin()
     {
         SessionManager.IsGuest = false;
         SceneManager.LoadScene("LoginScene");
     }
 
-    // Drag this to BtnRegister OnClick()
+    // BtnRegister OnClick()
     public void OnRegister()
     {
         SessionManager.IsGuest = false;

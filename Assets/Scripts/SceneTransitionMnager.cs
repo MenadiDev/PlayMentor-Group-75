@@ -13,7 +13,7 @@ public class SceneTransitionManager : MonoBehaviour
 
     void Awake()
     {
-        // Singleton pattern - only one instance exists
+        // Singleton pattern  
         if (Instance == null)
         {
             Instance = this;

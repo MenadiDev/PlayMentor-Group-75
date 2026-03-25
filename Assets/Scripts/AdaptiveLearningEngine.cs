@@ -51,7 +51,7 @@ public class AdaptiveLearningEngine : MonoBehaviour
     {
         currentTopicId = topicId;
 
-        // Guests always start on medium — nothing to load
+        // Guests always start on medium 
         if (SessionManager.IsGuest || string.IsNullOrEmpty(uid))
         {
             ResetToMedium();
@@ -88,7 +88,7 @@ public class AdaptiveLearningEngine : MonoBehaviour
     }
 
     
-    // Record one answer — runs the decision tree
+    // Record one answer and runs the decision tree
     
     public void RecordAnswer(bool wasCorrect)
     {
@@ -151,7 +151,7 @@ public class AdaptiveLearningEngine : MonoBehaviour
     public Difficulty GetCurrentDifficulty() => currentDifficulty;
     public string GetCurrentDifficultyString() => DifficultyToString(currentDifficulty);
 
-    /// Returns the Firestore "difficulty" filter value for the current level
+    /// Returning the Firestore difficulty filter value for the current level
     public string GetFirestoreDifficultyValue() => DifficultyToString(currentDifficulty);
 
     // Decision tree helpers
@@ -181,7 +181,7 @@ public class AdaptiveLearningEngine : MonoBehaviour
     }
 
     
-    // String ↔ Difficulty converters
+    // String Difficulty converters
     public static Difficulty ParseDifficulty(string s)
     {
         switch (s?.ToLower())

@@ -283,7 +283,6 @@ public class DashboardManager : MonoBehaviour
 
                 if (!doc.Exists)
                 {
-                    // First time today — create the doc
                     CreateTodayChallenge(uid);
                     return;
                 }
@@ -293,7 +292,7 @@ public class DashboardManager : MonoBehaviour
 
                 if (savedType != todayChallenge.type)
                 {
-                    // Challenge rotated — reset
+                    // Challenge rotate
                     CreateTodayChallenge(uid);
                     return;
                 }
