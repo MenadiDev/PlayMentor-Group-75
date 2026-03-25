@@ -42,7 +42,7 @@ public class LoginController : MonoBehaviour
         UnityEngine.Debug.Log("Firebase ready");
 
         // If the player was already logged in (session persisted by Firebase)
-        // skip the login screen and go straight to their dashboard
+        // skipping the login screen and go straight to their dashboard
         if (FirebaseManager.Instance.CurrentUser != null)
         {
             UnityEngine.Debug.Log("Already signed in — skipping login screen");
@@ -50,7 +50,7 @@ public class LoginController : MonoBehaviour
             yield break;
         }
 
-        // Otherwise subscribe to auth state for when they log in manually
+        // Otherwise subscribing to auth state for when they log in manually
         FirebaseManager.Instance.OnAuthStateChanged += OnAuthStateChanged;
     }
 
