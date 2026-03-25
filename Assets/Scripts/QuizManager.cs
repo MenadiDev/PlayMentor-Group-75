@@ -583,10 +583,16 @@ public class QuizManager : MonoBehaviour
             await FirebaseManager.Instance.SaveQuizResult(result);
             await FirebaseManager.Instance.SaveTopicProgress(result.Topic, correctAnswers, quizQuestions.Count);
 
+            if (AdaptiveLearningEngine.Instance != null)
+            {
+                await AdaptiveLearningEngine.Instance.SaveStateForTopic(currentTopic);
+                Debug.Log($"AdaptiveLearning: saved state for {currentTopic}");
+            }
+
+
             if (AchievementManager.Instance != null)
                 await AchievementManager.Instance.CheckAndUnlockAchievements(result);
 
-            // Daily Challenge
             DashboardManager.RecordQuizForChallenge(percentage);
 
             Debug.Log($"Quiz saved! Topic: {currentTopic}, Points: {totalPoints}");
