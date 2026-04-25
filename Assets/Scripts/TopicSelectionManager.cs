@@ -5,15 +5,14 @@ using TMPro;
 using Debug = UnityEngine.Debug;
 using Image = UnityEngine.UI.Image;
 
-/// <summary>
-/// Manages the Topic Selection scene.
+
 /// Spawns topic cards, handles selection, and starts the quiz.
-/// </summary>
+
 public class TopicSelectionManager : MonoBehaviour
 {
     // ─────────────────────────────────────────────
     // Inspector References
-    // ─────────────────────────────────────────────
+   
 
     [Header("Card Prefab & Containers")]
     [SerializeField] private GameObject topicCardPrefab;
@@ -21,12 +20,12 @@ public class TopicSelectionManager : MonoBehaviour
     [SerializeField] private Transform grade11Grid;    // Grid Layout Group parent for Grade 11
 
     [Header("Start Bar")]
-    [SerializeField] private GameObject startBar;          // the bottom start bar
-    [SerializeField] private TMP_Text selectedTopicText; // shows selected topic name
-    [SerializeField] private Button startButton;       // the Start! button
+    [SerializeField] private GameObject startBar;         
+    [SerializeField] private TMP_Text selectedTopicText; 
+    [SerializeField] private Button startButton;       
 
     [Header("Loading")]
-    [SerializeField] private GameObject loadingOverlay;    // full screen loading panel
+    [SerializeField] private GameObject loadingOverlay;    
 
     [Header("Topic Icons — Grade 10 (drag in order)")]
     [SerializeField] private Sprite iconChemical;
@@ -42,9 +41,9 @@ public class TopicSelectionManager : MonoBehaviour
     [SerializeField] private Sprite iconBiologicalProcesses;
     [SerializeField] private Sprite iconBiosphere;
 
-    // ─────────────────────────────────────────────
+    
     // Topic Data
-    // ─────────────────────────────────────────────
+    
     private class TopicData
     {
         public string topicId;
@@ -53,15 +52,15 @@ public class TopicSelectionManager : MonoBehaviour
         public Sprite icon;
     }
 
-    // ─────────────────────────────────────────────
+  
     // Private State
-    // ─────────────────────────────────────────────
+    
     private List<TopicCard> allCards = new List<TopicCard>();
     private TopicCard selectedCard = null;
 
-    // ─────────────────────────────────────────────
+    
     // Unity Lifecycle
-    // ─────────────────────────────────────────────
+    
     void Start()
     {
         // Hide start bar until a topic is selected
@@ -75,9 +74,9 @@ public class TopicSelectionManager : MonoBehaviour
         SpawnTopicCards();
     }
 
-    // ─────────────────────────────────────────────
-    // Spawn all topic cards into the grid
-    // ─────────────────────────────────────────────
+    
+    // Spawning all topic cards into the grid
+   
     private void SpawnTopicCards()
     {
         // Grade 10 topics
@@ -128,9 +127,9 @@ public class TopicSelectionManager : MonoBehaviour
         }
     }
 
-    // ─────────────────────────────────────────────
+   
     // Called by TopicCard when tapped
-    // ─────────────────────────────────────────────
+    
     public void OnTopicSelected(TopicCard card)
     {
         // Deselect previous card
@@ -150,9 +149,9 @@ public class TopicSelectionManager : MonoBehaviour
             startBar.SetActive(true);
     }
 
-    // ─────────────────────────────────────────────
+    
     // Start Button — load questions then go to quiz
-    // ─────────────────────────────────────────────
+   
     private async void OnStartClicked()
     {
         if (selectedCard == null)
@@ -173,7 +172,7 @@ public class TopicSelectionManager : MonoBehaviour
         if (!success)
         {
             Debug.LogError($"TopicSelectionManager: failed to load questions for '{selectedCard.topicId}'");
-            // Optionally show an error message to the player here
+            
             return;
         }
 

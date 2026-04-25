@@ -388,7 +388,7 @@ public class DashboardManager : MonoBehaviour
         });
     }
 
-    // Static copy of challenge defs for use in the static method above
+   
     private static readonly (int type, int goal)[] challengeDefs_Static = new (int, int)[]
     {
         (0, 3),  // complete 3 quizzes

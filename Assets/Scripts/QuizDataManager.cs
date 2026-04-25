@@ -35,7 +35,7 @@ public class QuizDataManager : MonoBehaviour
 
    
     // Load questions — adaptive for logged-in users,
-    // random pick for guests (no difficulty filter)
+    // random pick for guests 
     
     public async Task<bool> LoadQuestionsForTopic(string topicId)
     {

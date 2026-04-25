@@ -1,11 +1,13 @@
-﻿using UnityEngine;
+﻿using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Threading.Tasks;
 using Firebase;
 using Firebase.Auth;
-using Firebase.Firestore;
 using Firebase.Extensions;
-using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
+using Firebase.Firestore;
+using UnityEngine;
+using Debug = UnityEngine.Debug;
 
 public class FirebaseManager : MonoBehaviour
 {
@@ -28,7 +30,7 @@ public class FirebaseManager : MonoBehaviour
 
     void Awake()
     {
-        // Singleton pattern
+        
         if (Instance == null)
         {
             Instance = this;
@@ -51,15 +53,15 @@ public class FirebaseManager : MonoBehaviour
                 db = FirebaseFirestore.DefaultInstance;
 
                 IsInitialized = true;
-                UnityEngine.Debug.Log("✅ Firebase initialized successfully!");
+                UnityEngine.Debug.Log("Firebase initialized successfully!");
 
-                // Listen for auth state changes
+                
                 auth.StateChanged += AuthStateChanged;
                 AuthStateChanged(this, null);
             }
             else
             {
-                UnityEngine.Debug.LogError($"❌ Could not resolve Firebase dependencies: {task.Result}");
+                UnityEngine.Debug.LogError($"Could not resolve Firebase dependencies: {task.Result}");
             }
         });
     }
@@ -87,7 +89,7 @@ public class FirebaseManager : MonoBehaviour
         }
     }
 
-    // ================== AUTHENTICATION ==================
+    // AUTHENTICATION
 
     public async Task<bool> SignUpWithEmail(string email, string password, string username)
     {
@@ -96,9 +98,8 @@ public class FirebaseManager : MonoBehaviour
             var result = await auth.CreateUserWithEmailAndPasswordAsync(email, password);
             CurrentUser = result.User;
 
-            UnityEngine.Debug.Log($"✅ User created: {CurrentUser.Email}");
+            UnityEngine.Debug.Log($"User created: {CurrentUser.Email}");
 
-            // Create user profile in Firestore
             await CreateUserProfile(CurrentUser.UserId, email, username);
 
             return true;
@@ -133,11 +134,11 @@ public class FirebaseManager : MonoBehaviour
         if (auth != null)
         {
             auth.SignOut();
-            UnityEngine.Debug.Log("✅ User signed out");
+            UnityEngine.Debug.Log(" User signed out");
         }
     }
 
-    // ================== USER PROFILE ==================
+    //USER PROFILE 
 
     async Task CreateUserProfile(string userId, string email, string username)
     {
@@ -182,7 +183,7 @@ public class FirebaseManager : MonoBehaviour
                 CurrentUserProfile = UserProfile.FromDictionary(snapshot.ToDictionary());
                 UnityEngine.Debug.Log($"✅ Profile loaded: {CurrentUserProfile.Username}");
 
-                // Update last login
+               
                 await UpdateLastLogin();
 
                 OnUserProfileLoaded?.Invoke(CurrentUserProfile);
@@ -220,7 +221,7 @@ public class FirebaseManager : MonoBehaviour
         try
         {
             await db.Collection("users").Document(CurrentUser.UserId).UpdateAsync(updates);
-            LoadUserProfile(); // Reload to get fresh data
+            LoadUserProfile(); 
             return true;
         }
         catch (Exception ex)
@@ -230,11 +231,11 @@ public class FirebaseManager : MonoBehaviour
         }
     }
 
-    // ================== QUIZ RESULTS ==================
+    //  QUIZ RESULTS 
 
     public async Task<bool> SaveQuizResult(QuizResult result)
     {
-        // ── GUEST CHECK: skip saving for guest users ──
+        
         if (SessionManager.IsGuest)
         {
             UnityEngine.Debug.Log("Guest mode: quiz result not saved.");
@@ -243,7 +244,7 @@ public class FirebaseManager : MonoBehaviour
 
         if (CurrentUser == null)
         {
-            UnityEngine.Debug.LogWarning("⚠️ No user signed in, cannot save quiz result");
+            UnityEngine.Debug.LogWarning("No user signed in, cannot save quiz result");
             return false;
         }
 
@@ -252,38 +253,48 @@ public class FirebaseManager : MonoBehaviour
             result.UserId = CurrentUser.UserId;
             result.CompletedAt = Timestamp.GetCurrentTimestamp();
 
-            // Save quiz result
+            
             await db.Collection("quiz_results").AddAsync(result.ToDictionary());
 
-            // Update user stats
+            
             await UpdateUserStats(result);
 
-            UnityEngine.Debug.Log("✅ Quiz result saved");
+            if (AdaptiveLearningEngine.Instance != null)
+            {
+                string difficulty = AdaptiveLearningEngine.Instance.GetFirestoreDifficultyValue();
+                int correct = AdaptiveLearningEngine.Instance.CorrectStreak;
+                int wrong = AdaptiveLearningEngine.Instance.WrongStreak;
+
+                await SaveAdaptiveState(result.Topic, difficulty, correct, wrong);
+            }
+
+            Debug.Log("Quiz result and adaptive state saved");
             return true;
+
         }
         catch (Exception ex)
         {
-            UnityEngine.Debug.LogError($"❌ Failed to save quiz result: {ex.Message}");
+            UnityEngine.Debug.LogError($"Failed to save quiz result: {ex.Message}");
             return false;
         }
     }
 
     async Task UpdateUserStats(QuizResult result)
     {
-        // ── GUEST CHECK: skip all stat updates for guest users ──
+        
         if (SessionManager.IsGuest) return;
 
         if (CurrentUserProfile == null) return;
 
-        // Calculate new points
+        
         int newPoints = CurrentUserProfile.TotalPoints + result.PointsEarned;
         int newLevel = (newPoints / 1000) + 1;
 
-        // ─── STREAK LOGIC ───────────────────────────────
+        
         int currentStreak = CurrentUserProfile.CurrentStreak;
         DateTime today = DateTime.UtcNow.Date;
 
-        // Get last quiz date from Firestore
+        
         try
         {
             var snap = await db.Collection("users").Document(CurrentUser.UserId).GetSnapshotAsync();
@@ -294,22 +305,22 @@ public class FirebaseManager : MonoBehaviour
 
                 if (lastDate == today)
                 {
-                    // Already played today, keep streak as-is
+                    
                 }
                 else if (lastDate == today.AddDays(-1))
                 {
-                    // Played yesterday → extend streak
+                   
                     currentStreak++;
                 }
                 else
                 {
-                    // Missed a day → reset
+                   
                     currentStreak = 1;
                 }
             }
             else
             {
-                // First quiz ever
+                
                 currentStreak = 1;
             }
         }
@@ -337,7 +348,7 @@ public class FirebaseManager : MonoBehaviour
 
     public async Task SaveTopicProgress(string topicId, int correct, int total)
     {
-        // ── GUEST CHECK: skip topic progress for guest users ──
+        
         if (SessionManager.IsGuest)
         {
             UnityEngine.Debug.Log("Guest mode: topic progress not saved.");
@@ -380,7 +391,7 @@ public class FirebaseManager : MonoBehaviour
 
     public async Task<List<QuizResult>> GetUserQuizHistory(int limit = 10)
     {
-        // ── GUEST CHECK: return empty list for guest users ──
+        
         if (SessionManager.IsGuest)
         {
             UnityEngine.Debug.Log("Guest mode: no quiz history available.");
@@ -413,6 +424,128 @@ public class FirebaseManager : MonoBehaviour
         }
     }
 
+    // ADAPTIVE LEARNING STATE
+
+    public async Task<Dictionary<string, object>> LoadAdaptiveState(string topicId)
+    {
+        if (SessionManager.IsGuest || CurrentUser == null)
+        {
+            Debug.Log("Guest mode or no user: cannot load adaptive state");
+            return null;
+        }
+
+        try
+        {
+            var docRef = db.Collection("users")
+                .Document(CurrentUser.UserId)
+                .Collection("adaptiveState")
+                .Document(topicId);
+
+            var snapshot = await docRef.GetSnapshotAsync();
+
+            if (!snapshot.Exists)
+            {
+                Debug.Log($"No adaptive state found for topic: {topicId}");
+                return null;
+            }
+
+            var data = snapshot.ToDictionary();
+            Debug.Log($"✅ Loaded adaptive state for {topicId}: difficulty={data["currentDifficulty"]}");
+            return data;
+        }
+        catch (Exception ex)
+        {
+            Debug.LogError($"❌ Failed to load adaptive state: {ex.Message}");
+            return null;
+        }
+    }
+
+    
+    public async Task<bool> SaveAdaptiveState(string topicId, string difficulty, int correctStreak, int wrongStreak)
+    {
+        if (SessionManager.IsGuest || CurrentUser == null)
+        {
+            Debug.Log("Guest mode or no user: cannot save adaptive state");
+            return false;
+        }
+
+        try
+        {
+            var docRef = db.Collection("users")
+                .Document(CurrentUser.UserId)
+                .Collection("adaptiveState")
+                .Document(topicId);
+
+            var data = new Dictionary<string, object>
+        {
+            { "currentDifficulty", difficulty },
+            { "correctStreak", correctStreak },
+            { "wrongStreak", wrongStreak },
+            { "lastUpdated", FieldValue.ServerTimestamp }
+        };
+
+            await docRef.SetAsync(data);
+            Debug.Log($"✅ Saved adaptive state for {topicId}: difficulty={difficulty}, streak={correctStreak}");
+            return true;
+        }
+        catch (Exception ex)
+        {
+            Debug.LogError($"❌ Failed to save adaptive state: {ex.Message}");
+            return false;
+        }
+    }
+
+    
+    public async Task<List<string>> GetAdaptiveTopics()
+    {
+        if (SessionManager.IsGuest || CurrentUser == null)
+            return new List<string>();
+
+        try
+        {
+            var snapshot = await db.Collection("users")
+                .Document(CurrentUser.UserId)
+                .Collection("adaptiveState")
+                .GetSnapshotAsync();
+
+            var topics = new List<string>();
+            foreach (var doc in snapshot.Documents)
+            {
+                topics.Add(doc.Id);
+            }
+            return topics;
+        }
+        catch (Exception ex)
+        {
+            Debug.LogError($"❌ Failed to get adaptive topics: {ex.Message}");
+            return new List<string>();
+        }
+    }
+
+    
+    /// adaptive state helper
+    public async Task<bool> HasAdaptiveState(string topicId)
+    {
+        if (SessionManager.IsGuest || CurrentUser == null)
+            return false;
+
+        try
+        {
+            var docRef = db.Collection("users")
+                .Document(CurrentUser.UserId)
+                .Collection("adaptiveState")
+                .Document(topicId);
+
+            var snapshot = await docRef.GetSnapshotAsync();
+            return snapshot.Exists;
+        }
+        catch (Exception ex)
+        {
+            Debug.LogError($"❌ Failed to check adaptive state: {ex.Message}");
+            return false;
+        }
+    }
+
     void OnDestroy()
     {
         if (auth != null)
@@ -422,7 +555,7 @@ public class FirebaseManager : MonoBehaviour
     }
 }
 
-// ================== DATA MODELS ==================
+// DATA MODELS 
 
 [Serializable]
 public class UserProfile
@@ -436,6 +569,8 @@ public class UserProfile
     public int TotalPoints;
     public Timestamp CreatedAt;
     public Timestamp LastLoginAt;
+    public int TopicsMastered; 
+    public float AverageDifficulty; 
 
     public Dictionary<string, object> ToDictionary()
     {
@@ -449,7 +584,9 @@ public class UserProfile
             { "TotalBadges", TotalBadges },
             { "TotalPoints", TotalPoints },
             { "CreatedAt", CreatedAt },
-            { "LastLoginAt", LastLoginAt }
+            { "LastLoginAt", LastLoginAt },
+            { "TopicsMastered", TopicsMastered },
+            { "AverageDifficulty", AverageDifficulty }
         };
     }
 

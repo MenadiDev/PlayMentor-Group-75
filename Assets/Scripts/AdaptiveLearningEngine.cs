@@ -147,11 +147,13 @@ public class AdaptiveLearningEngine : MonoBehaviour
     }
 
     
-    // Public getters
+    
     public Difficulty GetCurrentDifficulty() => currentDifficulty;
     public string GetCurrentDifficultyString() => DifficultyToString(currentDifficulty);
 
-    /// Returning the Firestore difficulty filter value for the current level
+    public int CorrectStreak => correctStreak;
+    public int WrongStreak => wrongStreak;
+
     public string GetFirestoreDifficultyValue() => DifficultyToString(currentDifficulty);
 
     // Decision tree helpers
@@ -181,7 +183,7 @@ public class AdaptiveLearningEngine : MonoBehaviour
     }
 
     
-    // String Difficulty converters
+    
     public static Difficulty ParseDifficulty(string s)
     {
         switch (s?.ToLower())
